@@ -110,8 +110,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 45%;
 }
 .middle-menu__right-block .right-background-image {
-  height: 552px;
-  width: 533px;
+  width: calc(100% + 40px);
   margin-top: 60px;
   margin-left: 20px;
 }/*# sourceMappingURL=main.css.map */
