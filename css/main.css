@@ -53,12 +53,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   gap: 10px;
 }
 .top-menu__contacts img {
-  cursor: default;
   transition: 0.2s;
+  width: 33px;
+  height: 33px;
 }
 .top-menu__contacts img:hover {
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0);
+  filter: brightness(0.7) sepia(1) hue-rotate(270deg);
 }
 
 .middle-menu {

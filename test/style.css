@@ -1,0 +1,20 @@
+
+body{
+    background-color: black;
+}
+.container{    
+    
+    margin: 0 auto;
+    margin-top: 160px;
+    width: 50px;
+    height: 50px;
+}
+img{
+
+    width: 50px;
+    height: 50px;
+}
+img:hover{
+    filter: brightness(0.8) sepia(1) hue-rotate(100deg);
+    /* fill: blue; */
+}

@@ -10,7 +10,6 @@ html,body,h1,h2,h3,h4,h5,h6,p,ul,li{
 // для изменения цвета текста при hover - @include ColorHover(0.2s, 'col' , #2CDEF5 , pointer);
 // для изменения background при hover - @include ColorHover(0.2s, 'bgcol' , #2CDEF5 , pointer);
 // для изменения box-shadow при hover - @include shadowHover(0.2s , #2CDEF5 , 0px 4px 15px 0px , pointer )
-
 .header {
     color:#FFFFFF;
     background: linear-gradient(108.16deg, #1D1D1B 47.87%, #61187B 100%);
@@ -50,7 +49,12 @@ html,body,h1,h2,h3,h4,h5,h6,p,ul,li{
         display: flex;
         gap: 10px;
         img{
-            @include ColorHover(0.2s, 'bgcol' , #ffffff00 , pointer)
+            transition: 0.2s;
+            width: 33px;
+            height: 33px;
+        }
+        img:hover{
+            filter: brightness(0.7) sepia(1) hue-rotate(270deg);
         }
     }
 }
