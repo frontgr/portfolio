@@ -15,16 +15,15 @@
     "webpack-cli": "^5.1.4"
 
 - [**webpack и webpack-cli**](https://www.npmjs.com/package/webpack) - без установки вебпака,вебпаком мы наверно не сможем пользоваться
-<br>
-- [**mini-css-extract-plugin**](https://www.npmjs.com/package/mini-css-extract-plugin) - данный лоадер собирает css-код ИЗ js-файла(немного не удобно) вы можете увидеть строку 'import "../css/main.css"' по пути './src/scripts/index.js'
-<br>
-- [**css-minimizer-webpack-plugin**](https://www.npmjs.com/package/css-minimizer-webpack-plugin) - из названия понятно,что этот лоадер отвечает за минимизацию ксс.
-<br>
-- [**css-loader**](https://www.npmjs.com/package/webpack/css-loader) - интрепретирует '@import' и 'url()' --> 'import()' и 'require()'
-<br>
-- [**html-webpack-plugin**](https://www.npmjs.com/package/webpack/html-webpack-plugin) - Этот лоадер используется для того что-бы вебпак мог в html(писал выше,что вебпак не может).
-<br>
-- [**copy-webpack-plugin**](https://www.npmjs.com/package/webpack/copy-webpack-plugin) - Этот лоадер я решил загрузить,потому-что не получалось разобраться со сборкой картинок,как костыль наверно пойдет. Просто перекидывает картинки из src в dist
-<br><br>
 
+- [**mini-css-extract-plugin**](https://www.npmjs.com/package/mini-css-extract-plugin) - данный лоадер собирает css-код ИЗ js-файла(немного не удобно) вы можете увидеть строку 'import "../css/main.css"' по пути './src/scripts/index.js'
+
+- [**css-minimizer-webpack-plugin**](https://www.npmjs.com/package/css-minimizer-webpack-plugin) - из названия понятно,что этот лоадер отвечает за минимизацию ксс.
+
+- [**css-loader**](https://www.npmjs.com/package/webpack/css-loader) - интрепретирует '@import' и 'url()' --> 'import()' и 'require()'
+
+- [**html-webpack-plugin**](https://www.npmjs.com/package/webpack/html-webpack-plugin) - Этот лоадер используется для того что-бы вебпак мог в html(писал выше,что вебпак не может).
+
+- [**copy-webpack-plugin**](https://www.npmjs.com/package/webpack/copy-webpack-plugin) - Этот лоадер я решил загрузить,потому-что не получалось разобраться со сборкой картинок,как костыль наверно пойдет. Просто перекидывает картинки из src в dist
+  
 ### команды установки npm-пакетов представленны в [readme.md](./npmcmd.md) 
