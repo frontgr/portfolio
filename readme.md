@@ -17,7 +17,7 @@
 
 - [**webpack и webpack-cli**](https://www.npmjs.com/package/webpack) - без установки вебпака, вебпаком мы не сможем пользоваться.  
 
--[**webpack-dev-server**](https://www.npmjs.com/package/webpack-dev-server) - для запуска локального дев-сервера 
+- [**webpack-dev-server**](https://www.npmjs.com/package/webpack-dev-server) - для запуска локального дев-сервера 
 
 - [**mini-css-extract-plugin**](https://www.npmjs.com/package/mini-css-extract-plugin) - данный лоадер собирает css-код ИЗ js-файла(немного не удобно) вы можете увидеть строку 'import "../css/main.css"' по пути './src/scripts/index.js'.  
 
