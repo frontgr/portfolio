@@ -13,8 +13,11 @@
     "mini-css-extract-plugin": "^2.9.0"
     "webpack": "^5.91.0"  
     "webpack-cli": "^5.1.4"
+    "webpack-dev-server": "^5.0.4"
 
 - [**webpack и webpack-cli**](https://www.npmjs.com/package/webpack) - без установки вебпака, вебпаком мы не сможем пользоваться.  
+
+-[**webpack-dev-server**](https://www.npmjs.com/package/webpack-dev-server) - для запуска локального дев-сервера 
 
 - [**mini-css-extract-plugin**](https://www.npmjs.com/package/mini-css-extract-plugin) - данный лоадер собирает css-код ИЗ js-файла(немного не удобно) вы можете увидеть строку 'import "../css/main.css"' по пути './src/scripts/index.js'.  
 
