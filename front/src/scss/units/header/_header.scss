@@ -1,8 +1,6 @@
 @import "../../mixin/color-hover";
 @import "../../mixin/shadow-hover";
-// для изменения цвета текста при hover - @include ColorHover(0.2s, 'col' , #2CDEF5 , pointer);
-// для изменения background при hover - @include ColorHover(0.2s, 'bgcol' , #2CDEF5 , pointer);
-// для изменения box-shadow при hover - @include shadowHover(0.2s , #2CDEF5 , 0px 4px 15px 0px , pointer )
+
 .cap{
     color:#FFFFFF;
     background: linear-gradient(108.16deg, #1D1D1B 47.87%, #61187B 100%);
