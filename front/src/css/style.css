@@ -115,4 +115,84 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 533px;
   margin-top: 60px;
   margin-left: 20px;
+}
+
+.black {
+  background: #1D1D1B;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: #1D1D1B;
+}
+
+.thin-text {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #575757;
+  font-weight: 400;
+  line-height: 24.38px;
+}
+
+.bold-text {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.main {
+  width: 100%;
+}
+.main__wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.first-block {
+  height: 100vh;
+}
+.first-block__roadmap {
+  background-color: aquamarine;
+  padding-top: 100px;
+}
+.first-block__roadmap .table__text {
+  font-size: 36px;
+  font-weight: 700;
+}
+.first-block__roadmap .table__wrapper {
+  margin-top: 60px;
+  display: flex;
+  gap: 35px;
+}
+.first-block__roadmap .table__left {
+  background-color: bisque;
+  padding-top: 10px;
+}
+.first-block__roadmap .table__right {
+  width: calc(100% - 300px);
+  background-color: rgb(219, 196, 255);
+  display: flex;
+  flex-direction: column;
+}
+.first-block__roadmap .table__right .content-one {
+  background-color: rgb(220, 228, 245);
+  margin-bottom: 40px;
+}
+.first-block__roadmap .table__right .content-two {
+  background-color: rgb(220, 228, 245);
+  margin-bottom: 40px;
+}
+.first-block__roadmap .table__right .content-three {
+  background-color: rgb(220, 228, 245);
+  width: 90%;
+  margin-bottom: 40px;
+}
+.first-block__roadmap .table__right .content-four {
+  background-color: rgb(220, 228, 245);
+  margin-bottom: 40px;
+}
+.first-block__roadmap .table__right .content-five {
+  background-color: rgb(220, 228, 245);
+  width: 86%;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

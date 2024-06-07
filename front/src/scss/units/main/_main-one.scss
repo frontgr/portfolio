@@ -1,0 +1,91 @@
+@import "../../mixin/color-hover";
+@import "../../mixin/shadow-hover";
+
+.black{
+    background: #1D1D1B;
+    color: white;
+    
+}
+.white{
+    background-color: white;
+    color: #1D1D1B;
+
+}
+.thin-text{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #575757;
+    font-weight: 400;
+    line-height: 24.38px;
+}
+.bold-text{
+    font-weight: 700;
+    font-size: 30px;
+}
+.main {
+    width: 100%;
+
+    &__wrapper {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+.first-block {
+    height: 100vh;
+    &__roadmap{
+        background-color: aquamarine;
+        // margin-top: 100px;
+        padding-top: 100px;
+        .table{
+            &__text{
+                font-size: 36px;
+                font-weight:700;
+            }
+            &__wrapper{
+                margin-top: 60px;
+                display: flex;
+                gap: 35px;
+            }
+            &__left{
+                background-color: bisque;
+                padding-top: 10px;
+            }
+            &__right{
+                width: calc(100% - 300px);
+                background-color: rgb(219, 196, 255);
+                display: flex;
+                flex-direction: column;
+                .content-one{
+                    background-color: rgb(220, 228, 245);
+                    margin-bottom: 40px;
+                }
+                .content-two{
+                    background-color: rgb(220, 228, 245);
+                    margin-bottom: 40px;
+                }
+                .content-three{
+                    background-color: rgb(220, 228, 245);
+                    width: 90%;
+                    margin-bottom: 40px;
+                }
+                .content-four{
+                    background-color: rgb(220, 228, 245);
+                    margin-bottom: 40px;
+                }
+                .content-five{
+                    background-color: rgb(220, 228, 245);
+                    width: 86%;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+// .second-block {
+// }
+// .third-block {
+// }
+// .fourth-block {
+// }
+// .fifth-block {
+// }
