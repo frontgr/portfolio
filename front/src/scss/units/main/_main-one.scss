@@ -1,5 +1,5 @@
-@import "../../mixin/color-hover";
-@import "../../mixin/shadow-hover";
+@import "../../mixin&variable/variable";
+
 
 .black{
     background: #1D1D1B;
@@ -11,31 +11,42 @@
     color: #1D1D1B;
 
 }
+.circle{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
 .thin-text{
     margin-top: 10px;
     font-size: 20px;
     color: #575757;
     font-weight: 400;
+    
     line-height: 24.38px;
 }
 .bold-text{
     font-weight: 700;
     font-size: 30px;
 }
+.main-text{
+    font-size: 36px;
+    font-weight:700;
+}
 .main {
     width: 100%;
-
-    &__wrapper {
-        width: 75%;
-        margin: 0 auto;
-    }
+}
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
 }
 .first-block {
-    height: 100vh;
+    // height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 90px;
     &__roadmap{
         background-color: aquamarine;
         // margin-top: 100px;
-        padding-top: 100px;
         .table{
             &__text{
                 font-size: 36px;
@@ -51,7 +62,8 @@
                 padding-top: 10px;
             }
             &__right{
-                width: calc(100% - 300px);
+                width: calc(100% - 0px);
+
                 background-color: rgb(219, 196, 255);
                 display: flex;
                 flex-direction: column;
@@ -66,6 +78,7 @@
                 .content-three{
                     background-color: rgb(220, 228, 245);
                     width: 90%;
+                    height: 95px;
                     margin-bottom: 40px;
                 }
                 .content-four{
@@ -81,11 +94,147 @@
         }
     }
 }
-// .second-block {
-// }
-// .third-block {
-// }
-// .fourth-block {
-// }
+.second-block {
+    padding-top: 100px;
+    height: 600px;
+    .second-text{
+        font-size: 20px;
+        margin-top: 40px;
+        font-weight: 400;
+    }
+    &__menu-card{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card{
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        
+        gap: 20px;
+        // height: 250px;
+        white-space: wrap;
+        &__img{
+            width: 50px;
+            height: 50px;
+        } 
+        &__text{
+            font-size: 30px;
+        }
+        h2{
+            margin-top: 0;
+        }
+    }
+}
+.third-block {
+    padding-top: 100px;
+    height: 800px;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card{
+        border: 1px solid #8B8B8B;
+        border-radius: 20px;
+        width: 28%;
+        padding:40px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__btn-buy{
+        margin-top: 50px;
+        background-color:#1D1D1B;
+        border: none;
+        border-radius: 90px;
+        width: 100%;
+        height:60px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        @include ColorHover(0.2s, 'bgcol' , #2CDEF5 , pointer)
+    }
+    .list{
+        margin-top: 30px;
+        list-style-type: none;
+        li{
+            color: #575757;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        &__element::before{
+            content: url('../assets/decor/check.svg');
+            margin-right: 15px;
+            color: white;
+            color: #2CDEF5;
+        }
+    }
+
+}
+.fourth-block {
+    padding-top: 100px;
+    height: 700px;
+    &__slaid-menu{
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+    }
+    &__arrow-menu{
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        #leftArrow,#rightArrow{
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            
+        }
+        img{
+            margin: 3px;
+            width: 40px;
+            @include ColorHover(0.2s, 'bgcol' , #ffffff00 , pointer)
+        }                 
+        img:hover { 
+            transform: scale(1.20); 
+        }
+    }
+    .slaid-card{
+        background-color: white;
+        // height: 420px;
+        border-radius: 25px 25px 20px 20px;
+        width: 50%;
+        img{
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        .unit{
+            width: 80%;
+        }
+        &__wrapper-elem{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 20px;
+            padding-bottom: 30px;
+            margin-top: 20px;
+            // height: 140px;
+            img{
+                width: 40px;
+                margin: 9px;
+                @include ColorHover(0.2s, 'bgcol' , #ffffff00 , pointer)
+            }                 
+            img:hover { 
+                transform: scale(1.20); 
+            }
+        }
+        &__text{
+            color: #000000;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+}
 // .fifth-block {
 // }
