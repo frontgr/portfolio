@@ -1,0 +1,25 @@
+@mixin shadowHover($time , $color , $px , $cursor) {
+    &{
+        transition: $time;
+    }
+    &:hover{
+        cursor: pointer;
+        box-shadow: $px $color;
+    }
+}
+@mixin ColorHover( $transition-time, $art , $color , $cursor) {
+    &{
+        cursor: default;
+        transition: $transition-time;
+    }
+    &:hover{
+        @if $art == 'col' {
+            cursor: $cursor;
+            color:  $color;
+        }
+        @if $art == 'bgcol'{
+            cursor: pointer;
+            background-color: $color;
+        }
+    }
+}
