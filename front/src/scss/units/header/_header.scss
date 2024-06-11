@@ -1,5 +1,5 @@
-@import "../../mixin/color-hover";
-@import "../../mixin/shadow-hover";
+@import "../../mixin&variable/variable";
+
 
 .cap{
     color:#FFFFFF;
@@ -8,21 +8,27 @@
     height: 100vh;
     .cap__wrapper{
         width: 75%;
-        // height: 85vh;
         height: 100%;
         margin: 0 auto;
-        // padding-top: 40px;
         .top-menu{
-            padding-top: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .top-menu__logotype{
+            padding: 20px 0 20px 0;
+            background-color: #1A1A1A;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            &__wrapper{
+                width: 75%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &__logotype{
                 width: 130px;
                 height: 24px;
                 
             }
-            .top-menu__navigation{
+            &__navigation{
                 ul{
                     display: flex;
                     gap: 35px;
@@ -40,7 +46,7 @@
                     @include ColorHover(0.2s, 'col' , #2CDEF5 , pointer)
                 }
             }
-            .top-menu__contacts{
+            &__contacts{
                 display: flex;
                 gap: 10px;
                 img{
@@ -54,8 +60,8 @@
         .middle-menu{
             display: flex;
             height: 80%;
-            // margin-top: 169px;
-            .middle-menu__left{
+            padding-top: 70px;
+            &__left{
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
@@ -91,7 +97,7 @@
                     font-weight: 300;
                 }
             }
-            .middle-menu__right{
+            &__right{
                 width: 45%;
                 img{
                     height: 552px;
