@@ -1,9 +1,0 @@
-@mixin shadowHover($time , $color , $px , $cursor){
-    &{
-        transition: $time;
-    }
-    &:hover{
-        cursor: pointer;
-        box-shadow: $px $color;
-    }
-}
