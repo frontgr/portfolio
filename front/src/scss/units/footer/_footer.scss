@@ -1,0 +1,52 @@
+@import "../../mixin&variable/variable";
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 285px;
+    &__top-menu{
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        img{
+            @include ColorHover(0.2s, 'bgcol' , #ffffff00 , pointer)
+        }                   
+        img:hover { 
+            transform: scale(1.20); 
+        }
+        a{
+            font-size: 15px;
+            color: white;
+            font-weight: 400;
+            text-decoration: none;
+            @include ColorHover(0.2s, 'col' , #2CDEF5 , pointer)
+        }
+        
+    }
+    &__bottom-menu{
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        font-size: 15px;
+        color: white;
+        font-weight: 400;
+    }
+    &__info-text{
+        font-size: 15px;
+        color: white;
+        font-weight: 400;
+    }
+    .top-menu-wrap{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    hr{
+        margin-top: 60px;
+        width: 100%;
+        border: 1px solid #4F4F4F;
+    }
+}

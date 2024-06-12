@@ -14,6 +14,12 @@
     width: 60px;
     height: 60px;
 }
+.thinest-text{
+    font-size: 15px;
+    color: #575757;
+    font-weight: 400;
+    line-height: 24.38px;
+}
 .thin-text{
     margin-top: 10px;
     font-size: 20px;
@@ -35,6 +41,50 @@
     font-size: 36px;
     font-weight:700;
 }
+.toggle {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 62px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #E6E6E6;
+    transition: background-color ease 0.3s;
+}
+.toggle:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    background: #575757;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    text-indent: -22px;
+    word-spacing: 37px;
+    color: #fff;
+    text-shadow: -1px -1px rgba(0,0,0,0.15);
+    white-space: nowrap;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+.toggle:checked::before {
+    background: #2CDEF5;
+}
+.toggle:checked:before {
+    left: 32px;
+}
 .main {
     width: 100%;
 }
@@ -43,12 +93,9 @@
     margin: 0 auto;
 }
 .first-block {
-    // height: 100vh;
     padding-top: 100px;
     padding-bottom: 90px;
     &__roadmap{
-        background-color: aquamarine;
-        // margin-top: 100px;
         .table{
             &__text{
                 font-size: 36px;
@@ -60,35 +107,27 @@
                 gap: 35px;
             }
             &__left{
-                background-color: bisque;
                 padding-top: 10px;
             }
             &__right{
                 width: calc(100% - 0px);
-
-                background-color: rgb(219, 196, 255);
                 display: flex;
                 flex-direction: column;
                 .content-one{
-                    background-color: rgb(220, 228, 245);
                     margin-bottom: 40px;
                 }
                 .content-two{
-                    background-color: rgb(220, 228, 245);
                     margin-bottom: 40px;
                 }
                 .content-three{
-                    background-color: rgb(220, 228, 245);
                     width: 90%;
                     height: 95px;
                     margin-bottom: 40px;
                 }
                 .content-four{
-                    background-color: rgb(220, 228, 245);
                     margin-bottom: 40px;
                 }
                 .content-five{
-                    background-color: rgb(220, 228, 245);
                     width: 86%;
                     margin-bottom: 40px;
                 }
@@ -206,7 +245,6 @@
     }
     .slaid-card{
         background-color: white;
-        // height: 420px;
         border-radius: 25px 25px 20px 20px;
         width: 50%;
         img{
@@ -223,7 +261,6 @@
             padding: 20px;
             padding-bottom: 30px;
             margin-top: 20px;
-            // height: 140px;
             img{
                 width: 40px;
                 margin: 9px;
@@ -241,7 +278,7 @@
     }
 }
 .fifth-block {
-    height: 900px;
+    margin-bottom: 40px;
     &__feedback-menu{
         display: flex;
         gap: 120px;
@@ -258,12 +295,63 @@
         border-radius: 20px;
         border: 1px solid #C4C4C4;
         width: 50%;
+        padding-bottom: 40px;
+        height: 100%;
     }
     &__price{
         margin: 0 auto;
     }
+    &__image-wrapper{
+        background-color: #000000;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        height: 380px;
+    }
+    &__image{
+        padding-top: 20px;
+        width: 340px;
+        height: 340px;
+        border-radius: 20px 20px 0 0;
+        margin: 0 auto;
+    }
+    &__text-wrapper{
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    &__contact-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__main-text{
+        font-size: 24px;
+    }
+    .telegram-button{
+        margin-top: 40px;
+        width: 100%;
+        height: 80px;
+        background-color: #5288C1;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 90px;
+        @include ColorHover(0.2s, 'bgcol' , #5288C1 , pointer)
+    }
+    .whatsapp-button{
+        margin-top: 20px;
+        width: 100%;
+        height: 80px;
+        background-color:#22D466;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 90px;
+        @include ColorHover(0.2s, 'bgcol' , #22D466 , pointer)
+    }
     .input-feedback{
-
         padding-right: 20px;
         padding-left: 20px;
         height: 60px;
@@ -291,14 +379,16 @@
         background-repeat: no-repeat;
         background-position: calc(100% - 30px);
     }
-    .input-feedback-сomment{
+    .textaria-feedback-сomment{
         border-radius: 10px;
         padding-left: 20px;
-        height: 60px;
+        padding-top: 20px;
+        height: 100px;
         width: calc(100% - 25px);
         border: 1px solid #C8C8C8;
         font-size: 20px;
         color: rgb(129, 129, 129);
+        resize: none;
     }
     .chek-box-wrapper{
         display: flex;
@@ -318,48 +408,4 @@
         @include ColorHover(0.2s, 'bgcol' , #2CDEF5 , pointer)
     }
 
-}
-.toggle {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 62px;
-    height: 32px;
-    display: inline-block;
-    position: relative;
-    border-radius: 50px;
-    overflow: hidden;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    background-color: #E6E6E6;
-    transition: background-color ease 0.3s;
-}
-.toggle:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    z-index: 2;
-    width: 28px;
-    height: 28px;
-    background: #575757;
-    left: 2px;
-    top: 2px;
-    border-radius: 50%;
-
-    text-transform: uppercase;
-    font-weight: bold;
-    text-indent: -22px;
-    word-spacing: 37px;
-    color: #fff;
-    text-shadow: -1px -1px rgba(0,0,0,0.15);
-    white-space: nowrap;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-    transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
-}
-.toggle:checked::before {
-    background: #2CDEF5;
-}
-.toggle:checked:before {
-    left: 32px;
 }
