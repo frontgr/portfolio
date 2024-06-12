@@ -238,7 +238,7 @@
             <div class="wrapper">
                 <div class="fifth-block__feedback-menu">
                     <div class="fifth-block__left-block">
-                        <h2 class="main-text">Свяжитесь с нами</h2>
+                        <h2 class="main-text" style="margin-bottom: 50px;">Свяжитесь с нами</h2>
                         <input type="text" class="input-feedback" placeholder="Ваше имя *">
                         <input type="text" class="input-feedback" placeholder="e-mail *">
                         <input type="text" class="input-feedback" placeholder="Телефон">
@@ -264,7 +264,7 @@
 
                         </div>
                         <div>
-                            <input type="text" placeholder="Комментарий" class="input-feedback-сomment">
+                            <textarea class="textaria-feedback-сomment">Комментарий</textarea>
                         </div>
                         <div class="fifth-block__price">
                             <h2 class="bold-text" id="priceText">от 30 000 руб.</h2>
@@ -272,13 +272,71 @@
                         <button id="submitForm" class="submit-button">Отправить</button>
                     </div>
                     <div class="fifth-block__right-block">
-                        
+                        <div class="fifth-block__image-wrapper">
+                            <img src="./assets/decor/decor-rev.png" class="fifth-block__image">
+                        </div>
+                        <div class="fifth-block__text-wrapper">
+                            <h2 class="fifth-block__main-text">Наши контакты</h2>
+                            <div class="fifth-block__contact-wrapper">
+                                <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
+                                    <img src="./assets/decor/phone-call.svg" alt="phone-call icon element">
+                                    <h2 class="thinest-text">+7(987)654-32-10</h2>
+                                </div>
+                                <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
+                                    <img src="./assets/decor/mail-call.svg" alt="mail icon element">
+                                    <h2 class="thinest-text">mail@frontgr.com</h2>
+                                </div>
+                            </div>
+                            <a href="#"><button class="telegram-button">Telegram</button></a>
+                            <a href="#"><button class="whatsapp-button">Telegram</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
+    <footer>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer__top-menu">
+                    <div class="top-menu-wrap">
+                        <a href="#">Главная</a>
+                        <a href="#">О нас</a>
+                        <a href="#">Портфолио</a>
+                        <a href="#">Цены</a>
+                        <a href="#">Стажировка</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                    <div class="top-menu-wrap">
+                        <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
+                            <img src="./assets/decor/phone-call-blue.svg" alt="phone-call icon element">
+                            <h2 class="footer__text">+7(987)654-32-10</h2>
+                        </div>
+                        <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
+                            <img src="./assets/decor/mail-call-blue.svg" alt="mail icon element">
+                            <h2 class="footer__text">mail@frontgr.com</h2>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="./assets/logo/telegram.svg" alt="telegram logotype svg">
+                            <img src="./assets/logo/whatsapp.svg" alt="whatsapp logotype svg">
+                            <img src="./assets/logo/mail.svg"     alt="mail logotype svg">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer__bottom-menu">
+                    <div>
+                        <a href="#">
+                            <img src="./assets/logo/frontgr.svg" alt="FontGR">
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="footer__info-text">©️ Все права защищены. 2024</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./scripts/index.js"></script>
     <script type="module" src="./scripts/module.js"></script>
     
