@@ -1,8 +1,10 @@
 @charset "UTF-8";
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .cap {
@@ -22,6 +24,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   position: fixed;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 .cap .cap__wrapper .top-menu__wrapper {
   width: 75%;
@@ -83,23 +86,6 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 55%;
   padding-top: 155px;
 }
-.cap .cap__wrapper .middle-menu__left button {
-  background: #2CDEF5;
-  height: 75px;
-  width: 300px;
-  border-radius: 84px;
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: 600;
-  border: none;
-}
-.cap .cap__wrapper .middle-menu__left button {
-  transition: 0.2s;
-}
-.cap .cap__wrapper .middle-menu__left button:hover {
-  cursor: pointer;
-  box-shadow: 0px 4px 15px 0px #2CDEF5;
-}
 .cap .cap__wrapper .middle-menu__left h1 {
   font-size: 45px;
   line-height: 50px;
@@ -125,6 +111,26 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 533px;
   margin-top: 60px;
   margin-left: 20px;
+}
+.cap .cap__wrapper .middle-menu__main-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2CDEF5;
+  height: 75px;
+  width: 300px;
+  border-radius: 84px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+}
+.cap .cap__wrapper .middle-menu__main-button {
+  transition: 0.2s;
+}
+.cap .cap__wrapper .middle-menu__main-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 15px 0px #2CDEF5;
 }
 
 .black {
@@ -230,87 +236,87 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0 auto;
 }
 
-.first-block {
+.scheme-block {
   padding-top: 100px;
   padding-bottom: 90px;
 }
-.first-block__roadmap .table__text {
+.scheme-block__roadmap .table__text {
   font-size: 36px;
   font-weight: 700;
 }
-.first-block__roadmap .table__wrapper {
+.scheme-block__roadmap .table__wrapper {
   margin-top: 60px;
   display: flex;
   gap: 35px;
 }
-.first-block__roadmap .table__left {
+.scheme-block__roadmap .table__left {
   padding-top: 10px;
 }
-.first-block__roadmap .table__right {
+.scheme-block__roadmap .table__right {
   width: calc(100% - 0px);
   display: flex;
   flex-direction: column;
 }
-.first-block__roadmap .table__right .content-one {
+.scheme-block__roadmap .table__right .content-one {
   margin-bottom: 40px;
 }
-.first-block__roadmap .table__right .content-two {
+.scheme-block__roadmap .table__right .content-two {
   margin-bottom: 40px;
 }
-.first-block__roadmap .table__right .content-three {
+.scheme-block__roadmap .table__right .content-three {
   width: 90%;
   height: 95px;
   margin-bottom: 40px;
 }
-.first-block__roadmap .table__right .content-four {
+.scheme-block__roadmap .table__right .content-four {
   margin-bottom: 40px;
 }
-.first-block__roadmap .table__right .content-five {
+.scheme-block__roadmap .table__right .content-five {
   width: 86%;
   margin-bottom: 40px;
 }
 
-.second-block {
+.description-block {
   padding-top: 100px;
   height: 600px;
 }
-.second-block .second-text {
+.description-block .second-text {
   font-size: 20px;
   margin-top: 40px;
   font-weight: 400;
 }
-.second-block__menu-card {
+.description-block__menu-card {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
 }
-.second-block .card {
+.description-block .card {
   width: 28%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   white-space: wrap;
 }
-.second-block .card__img {
+.description-block .card__img {
   width: 50px;
   height: 50px;
 }
-.second-block .card__text {
+.description-block .card__text {
   font-size: 30px;
 }
-.second-block .card h2 {
+.description-block .card h2 {
   margin-top: 0;
 }
 
-.third-block {
+.price-block {
   padding-top: 100px;
   height: 800px;
 }
-.third-block__menu {
+.price-block__menu {
   display: flex;
   justify-content: space-between;
 }
-.third-block__card {
+.price-block__card {
   border: 1px solid #8B8B8B;
   border-radius: 20px;
   width: 28%;
@@ -318,7 +324,10 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   display: flex;
   flex-direction: column;
 }
-.third-block__btn-buy {
+.price-block__btn-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 50px;
   background-color: #1D1D1B;
   border: none;
@@ -329,81 +338,89 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-size: 20px;
   font-weight: 500;
 }
-.third-block__btn-buy {
-  cursor: default;
+.price-block__btn-buy {
   transition: 0.2s;
 }
-.third-block__btn-buy:hover {
+.price-block__btn-buy:hover {
   cursor: pointer;
-  background-color: #2CDEF5;
+  box-shadow: #1D1D1B 0px 4px 15px 0px;
 }
-.third-block .list {
+.price-block__card-unit-top {
+  height: 140px;
+}
+.price-block__card-unit-middle {
+  height: 300px;
+}
+.price-block__card-unit-bottom {
+  padding-top: 20px;
+}
+.price-block .list {
   margin-top: 30px;
   list-style-type: none;
 }
-.third-block .list li {
+.price-block .list li {
   color: #575757;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
 }
-.third-block .list__element::before {
+.price-block .list__element::before {
   content: url("../assets/decor/check.svg");
   margin-right: 15px;
   color: white;
   color: #2CDEF5;
 }
 
-.fourth-block {
+.portfolio-block {
   padding-top: 100px;
   height: 700px;
   background: #1D1D1B;
   color: white;
 }
-.fourth-block__slaid-menu {
+.portfolio-block__slaid-menu {
   margin-top: 50px;
   display: flex;
   gap: 20px;
 }
-.fourth-block__arrow-menu {
+.portfolio-block__arrow-menu {
   margin-top: 50px;
   display: flex;
   width: 100%;
   justify-content: flex-end;
 }
-.fourth-block__arrow-menu #leftArrow, .fourth-block__arrow-menu #rightArrow {
+.portfolio-block__arrow-menu #leftArrow, .portfolio-block__arrow-menu #rightArrow {
   background-color: transparent;
   border: none;
   padding: 0;
 }
-.fourth-block__arrow-menu img {
+.portfolio-block__arrow-menu img {
   margin: 3px;
   width: 40px;
 }
-.fourth-block__arrow-menu img {
+.portfolio-block__arrow-menu img {
   cursor: default;
   transition: 0.2s;
 }
-.fourth-block__arrow-menu img:hover {
+.portfolio-block__arrow-menu img:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
-.fourth-block__arrow-menu img:hover {
+.portfolio-block__arrow-menu img:hover {
   transform: scale(1.2);
 }
-.fourth-block .slaid-card {
+.portfolio-block .slaid-card {
   background-color: white;
   border-radius: 25px 25px 20px 20px;
   width: 50%;
 }
-.fourth-block .slaid-card img {
+.portfolio-block .slaid-card img {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-.fourth-block .slaid-card .unit {
+.portfolio-block .slaid-card .unit {
   width: 80%;
 }
-.fourth-block .slaid-card__wrapper-elem {
+.portfolio-block .slaid-card__wrapper-elem {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -411,42 +428,42 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   padding-bottom: 30px;
   margin-top: 20px;
 }
-.fourth-block .slaid-card__wrapper-elem img {
+.portfolio-block .slaid-card__wrapper-elem img {
   width: 40px;
   margin: 9px;
 }
-.fourth-block .slaid-card__wrapper-elem img {
+.portfolio-block .slaid-card__wrapper-elem img {
   cursor: default;
   transition: 0.2s;
 }
-.fourth-block .slaid-card__wrapper-elem img:hover {
+.portfolio-block .slaid-card__wrapper-elem img:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
 }
-.fourth-block .slaid-card__wrapper-elem img:hover {
+.portfolio-block .slaid-card__wrapper-elem img:hover {
   transform: scale(1.2);
 }
-.fourth-block .slaid-card__text {
+.portfolio-block .slaid-card__text {
   color: #000000;
   font-weight: 700;
   font-size: 24px;
 }
 
-.fifth-block {
+.contacts-block {
   margin-bottom: 40px;
 }
-.fifth-block__feedback-menu {
+.contacts-block__feedback-menu {
   display: flex;
   gap: 120px;
 }
-.fifth-block__left-block {
+.contacts-block__left-block {
   margin-top: 40px;
   display: flex;
   gap: 20px;
   flex-direction: column;
   width: 50%;
 }
-.fifth-block__right-block {
+.contacts-block__right-block {
   margin-top: 40px;
   border-radius: 20px;
   border: 1px solid #C4C4C4;
@@ -454,36 +471,39 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   padding-bottom: 40px;
   height: 100%;
 }
-.fifth-block__price {
+.contacts-block__price {
   margin: 0 auto;
 }
-.fifth-block__image-wrapper {
+.contacts-block__image-wrapper {
   background-color: #000000;
   border-radius: 20px 20px 0 0;
   display: flex;
   height: 380px;
 }
-.fifth-block__image {
+.contacts-block__image {
   padding-top: 20px;
   width: 340px;
   height: 340px;
   border-radius: 20px 20px 0 0;
   margin: 0 auto;
 }
-.fifth-block__text-wrapper {
+.contacts-block__text-wrapper {
   width: 85%;
   margin: 0 auto;
   margin-top: 50px;
 }
-.fifth-block__contact-wrapper {
+.contacts-block__contact-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-.fifth-block__main-text {
+.contacts-block__main-text {
   font-size: 24px;
 }
-.fifth-block .telegram-button {
+.contacts-block .telegram-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   width: 100%;
   height: 80px;
@@ -494,15 +514,17 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-weight: 700;
   border-radius: 90px;
 }
-.fifth-block .telegram-button {
-  cursor: default;
+.contacts-block .telegram-button {
   transition: 0.2s;
 }
-.fifth-block .telegram-button:hover {
+.contacts-block .telegram-button:hover {
   cursor: pointer;
-  background-color: #5288C1;
+  box-shadow: #5288C1 0px 4px 15px 0px;
 }
-.fifth-block .whatsapp-button {
+.contacts-block .whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   width: 100%;
   height: 80px;
@@ -513,40 +535,29 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-weight: 700;
   border-radius: 90px;
 }
-.fifth-block .whatsapp-button {
-  cursor: default;
+.contacts-block .whatsapp-button {
   transition: 0.2s;
 }
-.fifth-block .whatsapp-button:hover {
+.contacts-block .whatsapp-button:hover {
   cursor: pointer;
-  background-color: #22D466;
+  box-shadow: #22D466 0px 4px 15px 0px;
 }
-.fifth-block .input-feedback {
+.contacts-block .input-feedback {
   padding-right: 20px;
   padding-left: 20px;
   height: 60px;
   border: 1px solid #C8C8C8;
   border-radius: 90px;
   font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.contacts-block .input-feedback::-moz-placeholder {
   color: rgb(129, 129, 129);
 }
-.fifth-block .input-feedback::-moz-placeholder {
-  font-size: 20px;
+.contacts-block .input-feedback::placeholder {
   color: rgb(129, 129, 129);
 }
-.fifth-block .input-feedback::placeholder {
-  font-size: 20px;
-  color: rgb(129, 129, 129);
-}
-.fifth-block .input-feedback::-moz-placeholder:after {
-  content: " *";
-  color: red; /* пока не работает,надо найти другие решения*/
-}
-.fifth-block .input-feedback::placeholder:after {
-  content: " *";
-  color: red; /* пока не работает,надо найти другие решения*/
-}
-.fifth-block .input-feedback-select {
+.contacts-block .input-feedback-select {
   padding-left: 20px;
   height: 66px;
   border: 1px solid #C8C8C8;
@@ -559,7 +570,15 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   background-repeat: no-repeat;
   background-position: calc(100% - 30px);
 }
-.fifth-block .textaria-feedback-сomment {
+.contacts-block .input-feedback-select {
+  cursor: default;
+  transition: 0.2s;
+}
+.contacts-block .input-feedback-select:hover {
+  cursor: pointer;
+  background-color: rgba(34, 212, 102, 0);
+}
+.contacts-block .textaria-feedback-сomment {
   border-radius: 10px;
   padding-left: 20px;
   padding-top: 20px;
@@ -567,16 +586,22 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   width: calc(100% - 25px);
   border: 1px solid #C8C8C8;
   font-size: 20px;
-  color: rgb(129, 129, 129);
+  color: rgb(0, 0, 0);
   resize: none;
 }
-.fifth-block .chek-box-wrapper {
+.contacts-block .textaria-feedback-сomment::-moz-placeholder {
+  color: rgb(129, 129, 129);
+}
+.contacts-block .textaria-feedback-сomment::placeholder {
+  color: rgb(129, 129, 129);
+}
+.contacts-block .chek-box-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 97%;
 }
-.fifth-block .submit-button {
+.contacts-block .submit-button {
   width: 100%;
   height: 80px;
   border-radius: 90px;
@@ -586,13 +611,12 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   background-color: #1D1D1B;
   border: none;
 }
-.fifth-block .submit-button {
-  cursor: default;
+.contacts-block .submit-button {
   transition: 0.2s;
 }
-.fifth-block .submit-button:hover {
+.contacts-block .submit-button:hover {
   cursor: pointer;
-  background-color: #2CDEF5;
+  box-shadow: #1D1D1B 0px 4px 15px 0px;
 }
 
 .footer {
