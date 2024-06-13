@@ -16,6 +16,7 @@
             position: fixed;
             left: 0;
             width: 100%;
+            z-index: 10;
             &__wrapper{
                 width: 75%;
                 margin: 0 auto;
@@ -43,7 +44,7 @@
                     color: #FFFFFF;
                     font-size: 17px;
                     text-decoration: none;
-                    @include ColorHover(0.2s, 'col' , #2CDEF5 , pointer)
+                    @include ColorHover(0.2s, 'col' , $light-blue , pointer)
                 }
             }
             &__contacts{
@@ -68,17 +69,6 @@
                 width: 55%;
                 // height: 100%;
                 padding-top: 155px;
-                button{
-                    background: #2CDEF5;
-                    height: 75px;
-                    width: 300px;
-                    border-radius: 84px;
-                    color: #FFFFFF;
-                    font-size: 24px;
-                    font-weight: 600;
-                    border: none;
-                    @include shadowHover(0.2s , #2CDEF5 , 0px 4px 15px 0px , pointer )
-                }
                 h1{
                     font-size: 45px;
                     line-height: 50px;
@@ -105,6 +95,21 @@
                     margin-top: 60px;
                     margin-left: 20px;
                 }
+            }
+            &__main-button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                background: $light-blue;
+                height: 75px;
+                width: 300px;
+                border-radius: 84px;
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: 600;
+                border: none;
+                @include shadowHover(0.2s , $light-blue , 0px 4px 15px 0px , pointer )
             }
         }
     }

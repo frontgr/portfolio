@@ -2,12 +2,12 @@
 
 
 .black{
-    background: #1D1D1B;
+    background: $dark-color;
     color: white; 
 }
 .white{
     background-color: white;
-    color: #1D1D1B;
+    color: $dark-color;
 }
 .circle{
     border-radius: 50%;
@@ -16,14 +16,14 @@
 }
 .thinest-text{
     font-size: 15px;
-    color: #575757;
+    color: $gray-color;
     font-weight: 400;
     line-height: 24.38px;
 }
 .thin-text{
     margin-top: 10px;
     font-size: 20px;
-    color: #575757;
+    color: $gray-color;
     font-weight: 400;
     
     line-height: 24.38px;
@@ -64,7 +64,7 @@
     z-index: 2;
     width: 28px;
     height: 28px;
-    background: #575757;
+    background: $gray-color;
     left: 2px;
     top: 2px;
     border-radius: 50%;
@@ -80,7 +80,7 @@
     transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
 }
 .toggle:checked::before {
-    background: #2CDEF5;
+    background: $light-blue;
 }
 .toggle:checked:before {
     left: 32px;
@@ -92,7 +92,8 @@
     width: 75%;
     margin: 0 auto;
 }
-.first-block {
+//
+.scheme-block {
     padding-top: 100px;
     padding-bottom: 90px;
     &__roadmap{
@@ -135,7 +136,7 @@
         }
     }
 }
-.second-block {
+.description-block {
     padding-top: 100px;
     height: 600px;
     .second-text{
@@ -168,7 +169,7 @@
         }
     }
 }
-.third-block {
+.price-block {
     padding-top: 100px;
     height: 800px;
     &__menu{
@@ -184,8 +185,12 @@
         flex-direction: column;
     }
     &__btn-buy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         margin-top: 50px;
-        background-color:#1D1D1B;
+        background-color:$dark-color;
         border: none;
         border-radius: 90px;
         width: 100%;
@@ -193,13 +198,22 @@
         color: white;
         font-size: 20px;
         font-weight: 500;
-        @include ColorHover(0.2s, 'bgcol' , #2CDEF5 , pointer)
+        @include shadowHover(0.2s , 0px 4px 15px 0px, $dark-color , pointer)
+    }
+    &__card-unit-top{
+        height: 140px;
+    }
+    &__card-unit-middle{
+        height: 300px;
+    }
+    &__card-unit-bottom{
+        padding-top: 20px;
     }
     .list{
         margin-top: 30px;
         list-style-type: none;
         li{
-            color: #575757;
+            color: $gray-color;
             font-size: 20px;
             font-weight: 500;
             margin-bottom: 20px;
@@ -208,15 +222,15 @@
             content: url('../assets/decor/check.svg');
             margin-right: 15px;
             color: white;
-            color: #2CDEF5;
+            color: $light-blue;
         }
     }
 
 }
-.fourth-block {
+.portfolio-block {
     padding-top: 100px;
     height: 700px;
-    background: #1D1D1B;
+    background: $dark-color;
     color: white;
     &__slaid-menu{
         margin-top: 50px;
@@ -277,7 +291,7 @@
         }
     }
 }
-.fifth-block {
+.contacts-block {
     margin-bottom: 40px;
     &__feedback-menu{
         display: flex;
@@ -328,28 +342,34 @@
         font-size: 24px;
     }
     .telegram-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 40px;
         width: 100%;
         height: 80px;
-        background-color: #5288C1;
+        background-color: $gray-blue;
         border: none;
         color: #fff;
         font-size: 20px;
         font-weight: 700;
         border-radius: 90px;
-        @include ColorHover(0.2s, 'bgcol' , #5288C1 , pointer)
+        @include shadowHover(0.2s , 0px 4px 15px 0px, $gray-blue , pointer)
     }
     .whatsapp-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 20px;
         width: 100%;
         height: 80px;
-        background-color:#22D466;
+        background-color:$light-lime;
         border: none;
         color: #fff;
         font-size: 20px;
         font-weight: 700;
         border-radius: 90px;
-        @include ColorHover(0.2s, 'bgcol' , #22D466 , pointer)
+        @include shadowHover(0.2s , 0px 4px 15px 0px, $light-lime, pointer)
     }
     .input-feedback{
         padding-right: 20px;
@@ -358,15 +378,10 @@
         border: 1px solid #C8C8C8;
         border-radius: 90px;
         font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+    .input-feedback::placeholder{
         color: rgb(129, 129, 129);
-        &::placeholder{
-            font-size: 20px;
-            color: rgb(129, 129, 129);
-            &:after{
-                content: " *";
-                color: red; /* пока не работает,надо найти другие решения*/
-            }
-        }
     }
     .input-feedback-select{
         padding-left: 20px;
@@ -378,6 +393,7 @@
         background-image: url('../assets/decor/angle-right.svg'); 
         background-repeat: no-repeat;
         background-position: calc(100% - 30px);
+        @include ColorHover(0.2s, 'bgcol' , #22d46600 , pointer)
     }
     .textaria-feedback-сomment{
         border-radius: 10px;
@@ -387,8 +403,11 @@
         width: calc(100% - 25px);
         border: 1px solid #C8C8C8;
         font-size: 20px;
-        color: rgb(129, 129, 129);
+        color: rgb(0, 0, 0);
         resize: none;
+    }
+    .textaria-feedback-сomment::placeholder{
+        color: rgb(129, 129, 129) ;
     }
     .chek-box-wrapper{
         display: flex;
@@ -403,9 +422,9 @@
         font-size: 20px;
         font-weight: 700;
         color: white;
-        background-color: #1D1D1B;
+        background-color: $dark-color;
         border: none;
-        @include ColorHover(0.2s, 'bgcol' , #2CDEF5 , pointer)
+        @include shadowHover(0.2s , 0px 4px 15px 0px, $dark-color , pointer)
     }
 
 }
