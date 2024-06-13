@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link type="Image/x-icon" href="./assets/logo/frontgr.svg" rel="icon" >
+    <link type="Image/x-icon" href="./assets/logo/frontgr-favico.svg" rel="icon" >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>FrontGR - Разработка сайтов и веб-приложений</title>
 </head>
-
 <body>
     <header>
         <div class="cap">
@@ -26,17 +25,17 @@
                         <nav class="top-menu__navigation">
                             <ul>
                                 <li><a href="#">Главная</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Портфолио</a></li>
-                                <li><a href="#">Цены</a></li>
-                                <li><a href="#">Стажировка</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#AboutUs">О нас</a></li>
+                                <li><a href="#Portfolio">Портфолио</a></li>
+                                <li><a href="#Price">Цены</a></li>
+                                <li><a href="https://t.me/frontgrweb">Стажировка</a></li>
+                                <li><a href="#Contacts">Контакты</a></li>
                             </ul>
                         </nav>
                         <div class="top-menu__contacts">
-                            <img src="./assets/logo/telegram.svg" alt="telegram logotype svg">
-                            <img src="./assets/logo/whatsapp.svg" alt="whatsapp logotype svg">
-                            <img src="./assets/logo/mail.svg"     alt="mail logotype svg">
+                            <a href="https://t.me/frontgrweb"><img src="./assets/logo/telegram.svg" alt="telegram logotype svg"></a> 
+                            <a href="https://wa.me/79876543210"><img src="./assets/logo/whatsapp.svg" alt="whatsapp logotype svg"></a>
+                            <a href="mailto:mail@frontgr.com"><img src="./assets/logo/mail.svg" alt="mail logotype svg"></a>
                         </div>
                     </div>
                 </div>
@@ -44,9 +43,7 @@
                     <div class="middle-menu__left">
                         <h1>Дизайн и разработка сайтов под ключ<img src="./assets/decor/h_arrow_decor.svg" alt=" decoration for h1 text"></h1>
                         <p>Разрабатываем сайты под любые задачи, используя современные подходы и технологии в разработке.</p>
-                        <a href="#">
-                            <button>Заказать</button>
-                        </a>
+                        <a href="#Contacts" class="middle-menu__main-button">Заказать</a>
                     </div>
                     <div class="middle-menu__right">
                         <img src="./assets/decor/header_bg.png" alt="background decor" >
@@ -57,10 +54,9 @@
 
     </header>
     <main class="main">
-
-        <div class="first-block white">
+        <div class="scheme-block white">
             <div class="wrapper">
-                <div class="first-block__roadmap">
+                <div class="scheme-block__roadmap">
                     <div class="table">
                         <h1 class="table__text">Этапы разработки проекта</h1>
                         <div class="table__wrapper">
@@ -94,11 +90,11 @@
                 </div>
             </div>
         </div>
-        <div class="second-block black">
+        <div class="description-block black" id="AboutUs">
             <div class="wrapper">
                 <h1 class="main-text">Почему именно мы</h1>
                 <h2 class="second-text"><span style="color:#2CDEF5;font-weight: 700;">FrontGR</span> - это молодая команда, состоящая из опытных специалистов, которая работает над созданием сайтов и веб-приложений уже более года</h2>
-                <div class="second-block__menu-card">
+                <div class="description-block__menu-card">
                     <div class="card">
                         <img src="assets/decor/card_one.svg" alt="edit image svg" class="card__img">
                         <h1 class="card__text">Индивидуальный подход</h1>
@@ -117,15 +113,15 @@
                 </div>
             </div>
         </div>
-        <div class="third-block white">
+        <div class="price-block white"  id="Price">
             <div class="wrapper">
-                <div class="third-block__menu">
-                    <div class="third-block__card">
-                        <div style="height: 140px;">
+                <div class="price-block__menu">
+                    <div class="price-block__card">
+                        <div class="price-block__card-unit-top">
                             <h2>LANDING PAGE</h2>
                             <h2 class="thin-text">Одностраничный сайт, идеально подходящий для продвижения товара, услуги или мероприятия.</h2>
                         </div>
-                        <div style="height: 300px;">
+                        <div class="price-block__card-unit-middle">
                             <ul class="list">
                                 <li class="list__element">Брифинг клиента</li>
                                 <li class="list__element">Уникальный дизайн</li>
@@ -135,19 +131,17 @@
                                 <li class="list__element">Интеграция с CRM</li>
                             </ul>
                         </div>
-                        <div style="padding-top: 20px;">
+                        <div class="price-block__card-unit-bottom">
                             <h1>От 30 000 руб.</h1>
-                            <a href="#">
-                                <button class="third-block__btn-buy">Заказать</button>
-                            </a>
+                            <a href="#" class="price-block__btn-buy">Заказать</a>
                         </div>
                     </div>
-                    <div class="third-block__card">
-                        <div style="height: 140px;">
+                    <div class="price-block__card">
+                        <div class="price-block__card-unit-top">
                             <h2>Многостраничник</h2>
                             <h2 class="thin-text">Предназначен для более подробного знакомства с компанией, товаром или услугами.</h2>
                         </div>
-                        <div style="height: 300px;">
+                        <div class="price-block__card-unit-middle">
                             <ul class="list">
                                 <li class="list__element">Брифинг клиента</li>
                                 <li class="list__element">Уникальный дизайн</li>
@@ -157,19 +151,17 @@
                                 <li class="list__element">Интеграция с CRM</li>
                             </ul>
                         </div>
-                        <div style="padding-top: 20px;">
+                        <div class="price-block__card-unit-bottom">
                             <h1>от 50 000 руб.</h1>
-                            <a href="#">
-                                <button class="third-block__btn-buy">Заказать</button>
-                            </a>
+                            <a href="#" class="price-block__btn-buy">Заказать</a>
                         </div>
                     </div>
-                    <div class="third-block__card">
-                        <div style="height: 140px;">
+                    <div class="price-block__card">
+                        <div class="price-block__card-unit-top">
                             <h2>Интернет-магазин</h2>
                             <h2 class="thin-text">Онлайн-площадка, предназначенная для продажи товаров или услуг.</h2>
                         </div>
-                        <div style="height: 300px;">
+                        <div class="price-block__card-unit-middle">
                             <ul class="list">
                                 <li class="list__element">Брифинг клиента</li>
                                 <li class="list__element">Уникальный дизайн</li>
@@ -179,22 +171,20 @@
                                 <li class="list__element">Корзина и личный кабинет</li>
                             </ul>
                         </div>
-                        <div style="padding-top: 20px;">
+                        <div class="price-block__card-unit-bottom">
                             <h1>От 30 000 руб.</h1>
-                            <a href="#">
-                                <button class="third-block__btn-buy">Заказать</button>
-                            </a>
+                            <a href="#" class="price-block__btn-buy">Заказать</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fourth-block">
+        <div class="portfolio-block" id="Portfolio">
             <div class="wrapper">
                 <h2 class="main-text">Наши работы</h2>
-                <div class="fourth-block__slaid-menu">
+                <div class="portfolio-block__slaid-menu">
                     <div class="slaid-card">
-                        <img src="./assets/decor/kadaconstruction.png">
+                        <img src="./assets/decor/kadaconstruction.png" alt="kadaconstruction backgroung image">
                         <div class="slaid-card__wrapper-elem">
                             <div class="unit">
                                 <h2 class="slaid-card__text">KADA Construction</h2>
@@ -202,7 +192,7 @@
                             </div>
                             <div>
                                 <div class="circle black">
-                                    <a href="#">
+                                    <a href="https://kadaconstruction.ru/">
                                         <img src="./assets/decor/arrow-right.svg" alt="arrow right decor for btn" class="arrow"> 
                                     </a>
                                 </div>
@@ -210,7 +200,7 @@
                         </div>
                     </div>
                     <div class="slaid-card">
-                        <img src="./assets/decor/alpha-affiliates.png">
+                        <img src="./assets/decor/alpha-affiliates.png" alt="alphaaffiliates backgroung image">
                         <div class="slaid-card__wrapper-elem">
                             <div class="unit">
                                 <h2 class="slaid-card__text">ALPHA AFFILIATES</h2>
@@ -218,7 +208,7 @@
                             </div>
                             <div>
                                 <div class="circle black">
-                                    <a href="#">
+                                    <a href="https://alphaaffiliatescareers.com/">
                                         <img src="./assets/decor/arrow-right.svg" alt="arrow right decor for btn" class="arrow"> 
                                     </a>
                                 </div>
@@ -226,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="fourth-block__arrow-menu">
+                <div class="portfolio-block__arrow-menu">
                     <div>
                         <button id="leftArrow"><img src="./assets/decor/arrow-left-btn.svg" alt="left arrow btn icon"></button>
                         <button id="rightArrow"><img src="./assets/decor/arrow-right-btn.svg" alt="right arrow btn icon"></button>
@@ -234,10 +224,10 @@
                 </div>
             </div>
         </div>
-        <div class="fifth-block white">
+        <div class="contacts-block white" id="Contacts">
             <div class="wrapper">
-                <div class="fifth-block__feedback-menu">
-                    <div class="fifth-block__left-block">
+                <div class="contacts-block__feedback-menu">
+                    <div class="contacts-block__left-block">
                         <h2 class="main-text" style="margin-bottom: 50px;">Свяжитесь с нами</h2>
                         <input type="text" class="input-feedback" placeholder="Ваше имя *">
                         <input type="text" class="input-feedback" placeholder="e-mail *">
@@ -248,7 +238,7 @@
                             <option value="" class="normal-text">Многостраничник</option>
                             <option value="" class="normal-text">Интернет-магазин</option>
                         </select>
-                        <input type="text" class="input-feedback" placeholder="Количество страниц">
+                        <input type="number" class="input-feedback" placeholder="Количество страниц">
                         <div class="input-feedback">
                             <div class="chek-box-wrapper">
                                 <h2 class="normal-text">Нужен ли дизайн-макет</h2>
@@ -271,24 +261,24 @@
                         </div>
                         <button id="submitForm" class="submit-button">Отправить</button>
                     </div>
-                    <div class="fifth-block__right-block">
-                        <div class="fifth-block__image-wrapper">
-                            <img src="./assets/decor/decor-rev.png" class="fifth-block__image">
+                    <div class="contacts-block__right-block">
+                        <div class="contacts-block__image-wrapper">
+                            <img src="./assets/decor/decor-rev.png" class="contacts-block__image" alt="contacts menu background image-reverse">
                         </div>
-                        <div class="fifth-block__text-wrapper">
-                            <h2 class="fifth-block__main-text">Наши контакты</h2>
-                            <div class="fifth-block__contact-wrapper">
+                        <div class="contacts-block__text-wrapper">
+                            <h2 class="contacts-block__main-text">Наши контакты</h2>
+                            <div class="contacts-block__contact-wrapper">
                                 <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
                                     <img src="./assets/decor/phone-call.svg" alt="phone-call icon element">
-                                    <h2 class="thinest-text">+7(987)654-32-10</h2>
+                                    <a href="tel:+79876543210" class="thinest-text">+7(987)654-32-10</a>
                                 </div>
                                 <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
                                     <img src="./assets/decor/mail-call.svg" alt="mail icon element">
-                                    <h2 class="thinest-text">mail@frontgr.com</h2>
+                                    <a href="mailto:mail@frontgr.com" class="thinest-text">mail@frontgr.com</a>
                                 </div>
                             </div>
-                            <a href="#"><button class="telegram-button">Telegram</button></a>
-                            <a href="#"><button class="whatsapp-button">Telegram</button></a>
+                            <a href="https://t.me/frontgrweb"   class="telegram-button">Telegram</a>
+                            <a href="https://wa.me/79876543210" class="whatsapp-button">Whatsapp</a>
                         </div>
                     </div>
                 </div>
@@ -301,25 +291,25 @@
                 <div class="footer__top-menu">
                     <div class="top-menu-wrap">
                         <a href="#">Главная</a>
-                        <a href="#">О нас</a>
-                        <a href="#">Портфолио</a>
-                        <a href="#">Цены</a>
-                        <a href="#">Стажировка</a>
-                        <a href="#">Контакты</a>
+                        <a href="#AboutUs">О нас</a>
+                        <a href="#Portfolio">Портфолио</a>
+                        <a href="#Price">Цены</a>
+                        <a href="https://t.me/frontgrweb">Стажировка</a>
+                        <a href="#Contacts">Контакты</a>
                     </div>
                     <div class="top-menu-wrap">
                         <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
                             <img src="./assets/decor/phone-call-blue.svg" alt="phone-call icon element">
-                            <h2 class="footer__text">+7(987)654-32-10</h2>
+                            <a href="tel:+79876543210" class="footer__text">+7(987)654-32-10</a>
                         </div>
                         <div style="display: flex;align-items: flex-end; flex-wrap: nowrap;gap: 5px;">
                             <img src="./assets/decor/mail-call-blue.svg" alt="mail icon element">
-                            <h2 class="footer__text">mail@frontgr.com</h2>
+                            <a href="mailto:mail@frontgr.com" class="footer__text">mail@frontgr.com</a>
                         </div>
                         <div style="display: flex; gap: 10px;">
-                            <img src="./assets/logo/telegram.svg" alt="telegram logotype svg">
-                            <img src="./assets/logo/whatsapp.svg" alt="whatsapp logotype svg">
-                            <img src="./assets/logo/mail.svg"     alt="mail logotype svg">
+                            <a href="https://t.me/frontgrweb"><img src="./assets/logo/telegram.svg" alt="telegram logotype svg"></a> 
+                            <a href="https://wa.me/79876543210"><img src="./assets/logo/whatsapp.svg" alt="whatsapp logotype svg"></a>
+                            <a href="mailto:mail@frontgr.com"><img src="./assets/logo/mail.svg" alt="mail logotype svg"></a>
                         </div>
                     </div>
                 </div>
