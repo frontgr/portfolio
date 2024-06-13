@@ -3,7 +3,7 @@
         transition: $time;
     }
     &:hover{
-        cursor: pointer;
+        cursor: $cursor;
         box-shadow: $px $color;
     }
 }
@@ -18,8 +18,13 @@
             color:  $color;
         }
         @if $art == 'bgcol'{
-            cursor: pointer;
+            cursor: $cursor;
             background-color: $color;
         }
     }
 }
+$dark-color:#1D1D1B;
+$gray-color:#575757;
+$light-blue: #2CDEF5;
+$gray-blue : #5288C1;
+$light-lime: #22D466;
