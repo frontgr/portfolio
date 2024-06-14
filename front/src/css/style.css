@@ -1,5 +1,18 @@
 @charset "UTF-8";
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, input, textarea {
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+input,
+textarea {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
@@ -678,4 +691,32 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, a, input, textarea {
   margin-top: 60px;
   width: 100%;
   border: 1px solid #4F4F4F;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (max-width: 1024px) {
+  header .cap {
+    overflow-x: hidden;
+  }
+  header .cap .cap__wrapper {
+    width: 84.37%;
+  }
+  header .cap .cap__wrapper .top-menu__wrapper {
+    width: 84.37%;
+  }
+  header .cap .cap__wrapper .top-menu__navigation ul {
+    gap: 12px;
+  }
+  header .cap .cap__wrapper .top-menu__navigation ul li {
+    font-size: 16px;
+  }
+  header .cap .cap__wrapper .middle-menu__left {
+    width: 613px;
+    padding-top: 134px;
+  }
+  header .cap .cap__wrapper .middle-menu__left h1 {
+    font-size: 48px;
+  }
+  header .cap .cap__wrapper .middle-menu__right img {
+    margin-top: 69px;
+  }
+}

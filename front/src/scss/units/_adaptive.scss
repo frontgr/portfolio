@@ -4,6 +4,42 @@
 @media screen and (max-width: 1440px) {
 }
 @media screen and (max-width: 1024px) {
+    header {
+        .cap {
+            overflow-x: hidden;
+            .cap__wrapper {
+                width: 84.37%;
+                .top-menu {
+                    &__wrapper {
+                        width: 84.37%;
+                    }
+                &__navigation {
+                    ul {
+                        gap: 12px;
+                        li {
+                        font-size: 16px;
+                    }
+                }
+                }
+                }
+                
+                .middle-menu { 
+                    &__left {
+                        width: 613px;
+                        padding-top: 134px;
+                        h1 {
+                            font-size: 48px;
+                        }
+                    }                   
+                    &__right {
+                        img {
+                            margin-top: 69px;
+                        }
+                    }
+                }
+        }
+    }
+}
 }
 @media screen and (max-width: 768px) {
 }
