@@ -1,11 +1,24 @@
-html,body,h1,h2,h3,h4,h5,h6,p,ul,li,a,input,textarea{
-    font-family: "Montserrat", sans-serif;   
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+input,
+textarea {
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    
     text-decoration: none;
     scroll-behavior: smooth;
 }
 @import "./units/header/header";
 @import "./units/main/main-one";
 @import "./units/footer/footer";
+@import "./units/adaptive";
