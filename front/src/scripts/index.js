@@ -1,14 +1,11 @@
 import "../css/style.css";
+import validate from "./formValidate";
+import { jsonBuild } from "./priceBuild";
+import select from "./phoneMask";
 
-import draw from "./module.js";
-
-const randomColor = () =>
-  `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-function start() {
-  setInterval(() => {
-    console.clear();
-    draw(randomColor());
-    console.log("Wish  you great daytime!");
-  }, 1000);
-}
-start();
+document.getElementById("submitForm").addEventListener("click", function () {
+    if (validate()) {
+        console.log(jsonBuild());
+    }
+});
+select();
