@@ -13,8 +13,10 @@ a,
 input,
 textarea {
     font-family: "Montserrat", sans-serif;
+    
     margin: 0;
     padding: 0;
+
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -22,6 +24,7 @@ textarea {
 @import "./units/header/header";
 @import "./units/main/main-one";
 @import "./units/footer/footer";
+@import "./units/adaptive";
+
 @import "./component/popup";
 
-@import "./units/adaptive";
