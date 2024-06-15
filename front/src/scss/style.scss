@@ -18,7 +18,10 @@ textarea {
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
 @import "./units/header/header";
 @import "./units/main/main-one";
 @import "./units/footer/footer";
+@import "./component/popup";
+
 @import "./units/adaptive";
