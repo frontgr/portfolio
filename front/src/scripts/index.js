@@ -1,11 +1,15 @@
 import "../css/style.css";
-import validate from "./formValidate";
+import {validate , oninputForm} from "./formValidate";
 import { jsonBuild } from "./priceBuild";
-import select from "./phoneMask";
+import { select, selectTypeOfSite } from "./selectDropdown";
 
 document.getElementById("submitForm").addEventListener("click", function () {
     if (validate()) {
         console.log(jsonBuild());
     }
 });
+
 select();
+selectTypeOfSite();
+
+oninputForm();

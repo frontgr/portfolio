@@ -1,7 +1,9 @@
 const EMAIL_REGEXP =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
 import pricing from "./priceBuild";
-export default function validate() {
+
+export function validate() {
     let flag = true;
     let borderArray = [];
     const TIME = 5000;
@@ -9,7 +11,6 @@ export default function validate() {
         flag = false;
         redBorder("nameForm");
     }
-
     if (!EMAIL_REGEXP.test(document.getElementById("e-mail").value)) {
         flag = false;
         redBorder("e-mail");
@@ -17,11 +18,11 @@ export default function validate() {
     if (document.getElementById("phoneNumber").value.length < 16) {
         flag = false;
         underInput("underPhone");
-        redBorder("phoneNumber");
+        redBorder("phoneWrapper");
     }
-    if (document.getElementById("typeOfSite").value == 0) {
+    if (document.getElementById("typeOfSite").innerText == "Тип сайта") {
         flag = false;
-        redBorder("typeOfSite");
+        redBorder("typeOfSite-select");
     }
     if (
         document.getElementById("amountPage").value < 1 ||
@@ -33,7 +34,7 @@ export default function validate() {
     }
     if (flag) {
         pricing(
-            document.getElementById("typeOfSite").value,
+            document.getElementById("typeOfSite").innerText,
             document.getElementById("amountPage").value,
             document.getElementById("designCheck").checked,
             document.getElementById("tgbotCheck").checked,
@@ -54,4 +55,24 @@ export default function validate() {
         }, TIME);
     }
     return flag;
+}
+export function oninputForm() {
+    pricing(
+        document.getElementById("typeOfSite").innerText,
+        document.getElementById("amountPage").value,
+        document.getElementById("designCheck").checked,
+        document.getElementById("tgbotCheck").checked,
+    );
+    document
+        .getElementById("typeOfSite")
+        .addEventListener("input", oninputForm);
+    document
+        .getElementById("amountPage")
+        .addEventListener("input", oninputForm);
+    document
+        .getElementById("designCheck")
+        .addEventListener("input", oninputForm);
+    document
+        .getElementById("tgbotCheck")
+        .addEventListener("input", oninputForm);
 }
