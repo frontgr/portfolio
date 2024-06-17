@@ -430,7 +430,7 @@
                                 placeholder="e-mail *"
                                 id="e-mail"
                             />
-                            <div>
+                            <div class="phone-wrapper" id="phoneWrapper">
                                 <h2 class="under-phone-text" id="underPhone">
                                     <span style="color: red"> * </span>
                                     необходимо заполнить
@@ -460,38 +460,23 @@
                                     />
                                 </div>
                             </div>
-
-                            <select
-                                name="typeOfSite"
-                                id="typeOfSite"
-                                aria-placeholder="тип"
-                                class="input-feedback-select"
-                            >
-                                <option value="0" class="normal-text">
-                                    Тип сайта
-                                </option>
-                                <option value="1" class="normal-text">
-                                    Лэндинг
-                                </option>
-                                <option value="2" class="normal-text">
-                                    Сайт-визитка
-                                </option>
-                                <option value="3" class="normal-text">
-                                    Корпоративный
-                                </option>
-                                <option value="4" class="normal-text">
-                                    Портфолио
-                                </option>
-                                <option value="5" class="normal-text">
-                                    Блог
-                                </option>
-                                <option value="6" class="normal-text">
-                                    Форум
-                                </option>
-                                <option value="7" class="normal-text">
-                                    Интернет-магазин
-                                </option>
-                            </select>
+                            <div class="select-typeofsite" >
+                                <div class="select-typeofsite__header" id="typeOfSite-select">
+                                    <span class="select-typeofsite__current" id="typeOfSite">Тип сайта</span>
+                                    <div class="select-typeofsite__icon">v</div>
+                                </div>
+                            
+                                <div class="select-typeofsite__body">
+                                    <div id="item-select" class="select-typeofsite__item" style="border-radius: 20px 20px 0 0;">Лэндинг</div>
+                                    <div id="item-select" class="select-typeofsite__item">Сайт-визитка</div>
+                                    <div id="item-select" class="select-typeofsite__item">Корпоративный</div>
+                                    <div id="item-select" class="select-typeofsite__item">Портфолио</div>
+                                    <div id="item-select" class="select-typeofsite__item">Блог</div>
+                                    <div id="item-select" class="select-typeofsite__item">Форум</div>
+                                    <div id="item-select" class="select-typeofsite__item" style="border-radius: 0 0 20px 20px;">Интернет-магазин</div>
+                                </div>
+                            </div>
+                
                             <input
                                 type="number"
                                 class="input-feedback"

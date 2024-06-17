@@ -1,0 +1,119 @@
+.select {
+    position: relative;
+    color: transparent;
+    z-index: 4;
+    &__header {
+        cursor: pointer;
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        height: 60px;
+        padding: 0 10px 0 20px;
+    }
+    &__current {
+        font-size: 0px;
+    }
+    &__icon {
+        transform: scaleX(2);
+        display: flex;
+        font-size: 12px;
+        margin: 0 10px 0 5px;
+        color: black;
+    }
+
+    &__body {
+        // border: 1px solid #cccccc;
+        box-shadow: 1px 0px 15px rgb(124, 124, 124);
+        display: none;
+        left: 20px;
+        position: absolute;
+        right: 10px;
+        top: 100%;
+        background: white;
+        border-radius: 20px;
+    }
+    &__item {
+        cursor: pointer;
+        font-size: 0px;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item:hover {
+        background-color: #e0e0e0;
+    }
+}
+.select.is-active .select__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+
+.select-typeofsite {
+    position: relative;
+    z-index: 3;
+    &__header {
+        border: 1px solid #ccc;
+        border-radius: 90px;
+
+        cursor: pointer;
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        height: 60px;
+        padding: 0 20px 0 20px;
+    }
+    &__current {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__icon {
+        transform: scaleX(2);
+        display: flex;
+        font-size: 12px;
+        margin: 0 10px 0 5px;
+        color: black;
+    }
+
+    &__body {
+        box-shadow: 1px 0px 15px rgb(124, 124, 124);
+        display: none;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: white;
+        border-radius: 20px;
+    }
+    &__item {
+        cursor: pointer;
+
+        font-size: 20px;
+        color: #000000;
+        font-weight: 400;
+
+        padding: 8px;
+
+        display: flex;
+    }
+
+    &__item:hover {
+        background-color: #e0e0e0;
+    }
+}
+.select-typeofsite.is-active .select-typeofsite__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.phone-wrapper{
+    border-radius: 90px;
+    border: 1px solid #c8c8c8;
+}

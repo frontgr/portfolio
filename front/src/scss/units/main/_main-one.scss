@@ -344,65 +344,6 @@
         height: 22px;
         pointer-events: none; 
     }
-    
-    .select {
-        position: relative;
-        color: transparent;
-    }
-    .select.is-active .select__body {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .select__header {
-        border: 1px solid #ccc;
-        border-radius: 90px 0 0 90px;
-        border-right: 0px solid transparent;
-
-        cursor: pointer;
-
-        display: flex;
-        gap: 10px;
-        align-items: center;
-
-        height: 60px;
-        padding: 0 10px 0 20px;
-    }
-    .select__current {
-        font-size: 0px;
-    }
-    .select__icon {
-        transform: scaleX(2);
-        display: flex;
-        font-size: 12px;
-        margin: 0 10px 0 5px;
-        color: black;
-    }
-
-    .select__body {
-        // border: 1px solid #cccccc;
-        box-shadow: 1px 0px 15px rgb(124, 124, 124);
-        display: none;
-        left: 20px;
-        position: absolute;
-        right: 10px;
-        top: 100%;
-        background: white;
-        border-radius: 20px;
-    }
-    .select__item {
-        cursor: pointer;
-        font-size: 0px;
-        padding: 8px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .select__item:hover {
-        background-color: #e0e0e0;
-    }
-
     .under-phone-text {
         display: none;
         position: absolute;
@@ -462,15 +403,18 @@
 
         padding-right: 20px;
 
-        border: 1px solid #c8c8c8;
-        border-left: 0px solid transparent;
-        border-radius: 0 90px 90px 0;
+        border: none;
 
         font-size: 20px;
         color: rgb(0, 0, 0);
+        background-color: transparent;
     }
     .input-feedback-phone::placeholder {
         color: rgb(129, 129, 129);
+    }
+    .input-feedback-phone:active, :hover, :focus{
+        outline: 0;
+        outline-offset: 0;
     }
     .input-feedback-select {
         padding-left: 20px;
