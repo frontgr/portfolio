@@ -1,0 +1,57 @@
+.price-block {
+    padding-top: 100px;
+    height: 800px;
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        border: 1px solid #8b8b8b;
+        border-radius: 20px;
+        width: 28%;
+        padding: 40px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__btn-buy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 50px;
+        background-color: $dark-color;
+        border: none;
+        border-radius: 90px;
+        width: 100%;
+        height: 60px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        @include shadowHover(0.2s, 0px 4px 15px 0px, $dark-color, pointer);
+    }
+    &__card-unit-top {
+        height: 140px;
+    }
+    &__card-unit-middle {
+        height: 300px;
+    }
+    &__card-unit-bottom {
+        padding-top: 20px;
+    }
+    .list {
+        margin-top: 30px;
+        list-style-type: none;
+        li {
+            color: $gray-color;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        &__element::before {
+            content: url("../assets/decor/check.svg");
+            margin-right: 15px;
+            color: white;
+            color: $light-blue;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.portfolio-block {
+    padding-top: 100px;
+    height: 700px;
+    background: $dark-color;
+    color: white;
+    &__slaid-menu {
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+    }
+    &__arrow-menu {
+        margin-top: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        #leftArrow,
+        #rightArrow {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+        }
+        img {
+            margin: 3px;
+            width: 40px;
+            @include ColorHover(0.2s, "bgcol", #ffffff00, pointer);
+        }
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+    .slaid-card {
+        background-color: white;
+        border-radius: 25px 25px 20px 20px;
+        width: 50%;
+        img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+        .unit {
+            width: 80%;
+        }
+        &__wrapper-elem {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 20px;
+            padding-bottom: 30px;
+            margin-top: 20px;
+            img {
+                width: 40px;
+                margin: 9px;
+                @include ColorHover(0.2s, "bgcol", #ffffff00, pointer);
+            }
+            img:hover {
+                transform: scale(1.2);
+            }
+        }
+        &__text {
+            color: #000000;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+}
