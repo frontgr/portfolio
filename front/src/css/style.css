@@ -590,6 +590,7 @@ textarea {
   height: 60px;
   padding-right: 20px;
   border: none;
+  border-radius: 0 95px 95px 0;
   font-size: 20px;
   color: rgb(0, 0, 0);
   background-color: transparent;
@@ -738,7 +739,7 @@ textarea {
   height: 100vh;
   -webkit-backdrop-filter: blur(10px) brightness(80%);
           backdrop-filter: blur(10px) brightness(80%);
-  z-index: 2;
+  z-index: 10;
 }
 .popup__menu {
   display: flex;
