@@ -3,32 +3,49 @@
 var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/scripts/priceBuild.js
-const TYPE_SITE = [undefined, 20000, 20000, 30000, 30000, 60000, 70000, 90000];
-const TYPE_SITE_TEXT = [
-    undefined,
-    "landing",
-    "business_card",
-    "corporate",
-    "portfolio",
-    "blog",
-    "forum",
-    "e-store",
-];
+const TYPE_SITE_TEXT = {
+    "Лэндинг": 'landing',
+    "Сайт-визитка": 'business_card',
+    "Корпоративный": 'corporate',
+    "Портфолио": 'portfolio',
+    "Блог": 'blog',
+    "Форум": 'forum',
+    "Интернет-магазин": 'e-store',
+    
+};
+const TYPE_SITE = {
+    "Лэндинг": 20000,
+    "Сайт-визитка": 20000,
+    "Корпоративный": 30000,
+    "Портфолио": 30000,
+    "Блог": 60000,
+    "Форум": 70000,
+    "Интернет-магазин": 90000,
+    
+};
 const ONE_PAGE = 8000;
 const DESIGN = 15000;
 const TG_BOT = 9000;
 function pricing(typeOfSite, amountPage, design, telegramBot) {
-    let totalPrice = 0;
+    typeOfSite == 'Тип сайта' ? typeOfSite = 'Лэндинг' : false;
+    amountPage == 0 ? amountPage =  1 : false;
+    
     amountPage--;
-    totalPrice += TYPE_SITE[typeOfSite] + ONE_PAGE * amountPage + (design ? DESIGN : 0) + (telegramBot ? TG_BOT : 0);
+    let totalPrice =
+        TYPE_SITE[typeOfSite] +
+        ONE_PAGE * amountPage +
+        (design ? DESIGN : 0) +
+        (telegramBot ? TG_BOT : 0);
     document.getElementById("priceText").innerText = `от ${totalPrice} руб.`;
 }
 function jsonBuild() {
     let objectOfSite = {
         name: document.getElementById("nameForm").value,
-        phone: `+${document.getElementById("phoneNumber").value.replace(/\D/g, "")}`,
+        phone: `+${document
+            .getElementById("phoneNumber")
+            .value.replace(/\D/g, "")}`,
         email: document.getElementById("e-mail").value,
-        type: TYPE_SITE_TEXT[document.getElementById("typeOfSite").value],
+        type: TYPE_SITE_TEXT[document.getElementById("typeOfSite").innerText],
         pageCount: document.getElementById("amountPage").value,
         design: document.getElementById("designCheck").checked,
         bot: document.getElementById("tgbotCheck").checked,
@@ -41,6 +58,8 @@ function jsonBuild() {
 const EMAIL_REGEXP =
     /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
 
+
+
 function validate() {
     let flag = true;
     let borderArray = [];
@@ -49,7 +68,6 @@ function validate() {
         flag = false;
         redBorder("nameForm");
     }
-
     if (!EMAIL_REGEXP.test(document.getElementById("e-mail").value)) {
         flag = false;
         redBorder("e-mail");
@@ -57,11 +75,11 @@ function validate() {
     if (document.getElementById("phoneNumber").value.length < 16) {
         flag = false;
         underInput("underPhone");
-        redBorder("phoneNumber");
+        redBorder("phoneWrapper");
     }
-    if (document.getElementById("typeOfSite").value == 0) {
+    if (document.getElementById("typeOfSite").innerText == "Тип сайта") {
         flag = false;
-        redBorder("typeOfSite");
+        redBorder("typeOfSite-select");
     }
     if (
         document.getElementById("amountPage").value < 1 ||
@@ -73,7 +91,7 @@ function validate() {
     }
     if (flag) {
         pricing(
-            document.getElementById("typeOfSite").value,
+            document.getElementById("typeOfSite").innerText,
             document.getElementById("amountPage").value,
             document.getElementById("designCheck").checked,
             document.getElementById("tgbotCheck").checked,
@@ -95,13 +113,35 @@ function validate() {
     }
     return flag;
 }
+function oninputForm() {
+    pricing(
+        document.getElementById("typeOfSite").innerText,
+        document.getElementById("amountPage").value,
+        document.getElementById("designCheck").checked,
+        document.getElementById("tgbotCheck").checked,
+    );
+    document
+        .getElementById("typeOfSite")
+        .addEventListener("input", oninputForm);
+    document
+        .getElementById("amountPage")
+        .addEventListener("input", oninputForm);
+    document
+        .getElementById("designCheck")
+        .addEventListener("input", oninputForm);
+    document
+        .getElementById("tgbotCheck")
+        .addEventListener("input", oninputForm);
+}
 
-;// CONCATENATED MODULE: ./src/scripts/phoneMask.js
-const phoneMask_element = document.getElementById("phoneNumber");
+;// CONCATENATED MODULE: ./src/scripts/selectDropdown.js
+
+
+const selectDropdown_element = document.getElementById("phoneNumber");
 const maskOptions = { mask: "+{7}(000)000-00-00" };
-const mask = IMask(phoneMask_element, maskOptions);
+const mask = IMask(selectDropdown_element, maskOptions);
 document.getElementById("phoneNumber").placeholder = "+7(___)___-__-__";
-function phoneMask_select() {
+function selectDropdown_select() {
     let selectHeader = document.querySelectorAll(".select__header");
     let selectItem = document.querySelectorAll(".select__item");
     selectHeader.forEach((item) => {
@@ -120,6 +160,27 @@ function phoneMask_select() {
         currentText.innerHTML = this.innerHTML;
         select.classList.remove("is-active");
         updateMaskOnPhone(this.innerText);
+    }
+}
+function selectTypeOfSite() {
+    let selectHeader = document.querySelectorAll(".select-typeofsite__header");
+    let selectItem = document.querySelectorAll(".select-typeofsite__item");
+    selectHeader.forEach((item) => {
+        item.addEventListener("click", selectToggle);
+    });
+    selectItem.forEach((item) => {
+        item.addEventListener("click", selectChoose);
+    });
+    function selectToggle() {
+        this.parentElement.classList.toggle("is-active");
+    }
+    function selectChoose() {
+        let text = this,
+            select = this.closest(".select-typeofsite"),
+            currentText = select.querySelector(".select-typeofsite__current");
+        currentText.innerHTML = this.innerHTML;
+        oninputForm();
+        select.classList.remove("is-active");
     }
 }
 function updateMaskOnPhone(countryNumber) {
@@ -141,7 +202,11 @@ document.getElementById("submitForm").addEventListener("click", function () {
         console.log(jsonBuild());
     }
 });
-phoneMask_select();
+
+selectDropdown_select();
+selectTypeOfSite();
+
+oninputForm();
 
 /******/ })()
 ;
