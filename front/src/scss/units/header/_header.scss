@@ -1,5 +1,11 @@
 @import "../../mixin&variable/variable";
 
+.top-menu__popup--button {
+    display: none;
+}
+.top-menu__popup {
+    display: none;
+}
 
 .cap{
     color:#FFFFFF;
