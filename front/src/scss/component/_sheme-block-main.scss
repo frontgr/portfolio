@@ -1,0 +1,43 @@
+.scheme-block {
+    padding-top: 100px;
+    padding-bottom: 90px;
+    &__roadmap {
+        .table {
+            &__text {
+                font-size: 36px;
+                font-weight: 700;
+            }
+            &__wrapper {
+                margin-top: 60px;
+                display: flex;
+                gap: 35px;
+            }
+            &__left {
+                padding-top: 10px;
+            }
+            &__right {
+                width: calc(100% - 0px);
+                display: flex;
+                flex-direction: column;
+                .content-one {
+                    margin-bottom: 40px;
+                }
+                .content-two {
+                    margin-bottom: 40px;
+                }
+                .content-three {
+                    width: 90%;
+                    height: 95px;
+                    margin-bottom: 40px;
+                }
+                .content-four {
+                    margin-bottom: 40px;
+                }
+                .content-five {
+                    width: 86%;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}

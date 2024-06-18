@@ -1,45 +1,44 @@
 @import "../../mixin&variable/variable";
 
-
-.black{
+.black {
     background: $dark-color;
-    color: white; 
+    color: white;
 }
-.white{
+.white {
     background-color: white;
     color: $dark-color;
 }
-.circle{
+.circle {
     border-radius: 50%;
     width: 60px;
     height: 60px;
 }
-.thinest-text{
+.thinest-text {
     font-size: 15px;
     color: $gray-color;
     font-weight: 400;
     line-height: 24.38px;
 }
-.thin-text{
+.thin-text {
     margin-top: 10px;
     font-size: 20px;
     color: $gray-color;
     font-weight: 400;
-    
+
     line-height: 24.38px;
 }
-.normal-text{
+.normal-text {
     font-size: 20px;
     color: #000000;
     font-weight: 400;
 }
-.bold-text{
+.bold-text {
     font-weight: 700;
     font-size: 30px;
 }
-.main-text{
+.main-text {
     font-size: 36px;
-    font-weight:700;
+    font-weight: 700;
 }
 .toggle {
     -webkit-appearance: none;
@@ -54,7 +53,7 @@
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
     transition: background-color ease 0.3s;
 }
 .toggle:before {
@@ -74,9 +73,9 @@
     text-indent: -22px;
     word-spacing: 37px;
     color: #fff;
-    text-shadow: -1px -1px rgba(0,0,0,0.15);
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
     white-space: nowrap;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
 }
 .toggle:checked::before {
@@ -88,343 +87,17 @@
 .main {
     width: 100%;
 }
-.wrapper{
+.wrapper {
     width: 75%;
     margin: 0 auto;
 }
-//
-.scheme-block {
-    padding-top: 100px;
-    padding-bottom: 90px;
-    &__roadmap{
-        .table{
-            &__text{
-                font-size: 36px;
-                font-weight:700;
-            }
-            &__wrapper{
-                margin-top: 60px;
-                display: flex;
-                gap: 35px;
-            }
-            &__left{
-                padding-top: 10px;
-            }
-            &__right{
-                width: calc(100% - 0px);
-                display: flex;
-                flex-direction: column;
-                .content-one{
-                    margin-bottom: 40px;
-                }
-                .content-two{
-                    margin-bottom: 40px;
-                }
-                .content-three{
-                    width: 90%;
-                    height: 95px;
-                    margin-bottom: 40px;
-                }
-                .content-four{
-                    margin-bottom: 40px;
-                }
-                .content-five{
-                    width: 86%;
-                    margin-bottom: 40px;
-                }
-            }
-        }
-    }
-}
-.description-block {
-    padding-top: 100px;
-    height: 600px;
-    .second-text{
-        font-size: 20px;
-        margin-top: 40px;
-        font-weight: 400;
-    }
-    &__menu-card{
-        margin-top: 60px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .card{
-        width: 28%;
-        display: flex;
-        flex-direction: column;
-        
-        gap: 20px;
-        // height: 250px;
-        white-space: wrap;
-        &__img{
-            width: 50px;
-            height: 50px;
-        } 
-        &__text{
-            font-size: 30px;
-        }
-        h2{
-            margin-top: 0;
-        }
-    }
-}
-.price-block {
-    padding-top: 100px;
-    height: 800px;
-    &__menu{
-        display: flex;
-        justify-content: space-between;
-    }
-    &__card{
-        border: 1px solid #8B8B8B;
-        border-radius: 20px;
-        width: 28%;
-        padding:40px 20px 40px 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    &__btn-buy{
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        margin-top: 50px;
-        background-color:$dark-color;
-        border: none;
-        border-radius: 90px;
-        width: 100%;
-        height:60px;
-        color: white;
-        font-size: 20px;
-        font-weight: 500;
-        @include shadowHover(0.2s , 0px 4px 15px 0px, $dark-color , pointer)
-    }
-    &__card-unit-top{
-        height: 140px;
-    }
-    &__card-unit-middle{
-        height: 300px;
-    }
-    &__card-unit-bottom{
-        padding-top: 20px;
-    }
-    .list{
-        margin-top: 30px;
-        list-style-type: none;
-        li{
-            color: $gray-color;
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
-        &__element::before{
-            content: url('../assets/decor/check.svg');
-            margin-right: 15px;
-            color: white;
-            color: $light-blue;
-        }
-    }
+@import '../../component/sheme-block-main';
 
-}
-.portfolio-block {
-    padding-top: 100px;
-    height: 700px;
-    background: $dark-color;
-    color: white;
-    &__slaid-menu{
-        margin-top: 50px;
-        display: flex;
-        gap: 20px;
-    }
-    &__arrow-menu{
-        margin-top: 50px;
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        #leftArrow,#rightArrow{
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            
-        }
-        img{
-            margin: 3px;
-            width: 40px;
-            @include ColorHover(0.2s, 'bgcol' , #ffffff00 , pointer)
-        }                 
-        img:hover { 
-            transform: scale(1.20); 
-        }
-    }
-    .slaid-card{
-        background-color: white;
-        border-radius: 25px 25px 20px 20px;
-        width: 50%;
-        img{
-            width: 100%;
-            border-radius: 20px 20px 0 0;
-        }
-        .unit{
-            width: 80%;
-        }
-        &__wrapper-elem{
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            padding: 20px;
-            padding-bottom: 30px;
-            margin-top: 20px;
-            img{
-                width: 40px;
-                margin: 9px;
-                @include ColorHover(0.2s, 'bgcol' , #ffffff00 , pointer)
-            }                 
-            img:hover { 
-                transform: scale(1.20); 
-            }
-        }
-        &__text{
-            color: #000000;
-            font-weight: 700;
-            font-size: 24px;
-        }
-    }
-}
-.contacts-block {
-    margin-bottom: 40px;
-    &__feedback-menu{
-        display: flex;
-        gap: 120px;
-    }
-    &__left-block{
-        margin-top: 40px;
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        width: 50%;
-    }
-    &__right-block{
-        margin-top: 40px;
-        border-radius: 20px;
-        border: 1px solid #C4C4C4;
-        width: 50%;
-        padding-bottom: 40px;
-        height: 100%;
-    }
-    &__price{
-        margin: 0 auto;
-    }
-    &__image-wrapper{
-        background-color: #000000;
-        border-radius: 20px 20px 0 0;
-        display: flex;
-        height: 380px;
-    }
-    &__image{
-        padding-top: 20px;
-        width: 340px;
-        height: 340px;
-        border-radius: 20px 20px 0 0;
-        margin: 0 auto;
-    }
-    &__text-wrapper{
-        width: 85%;
-        margin: 0 auto;
-        margin-top: 50px;
-    }
-    &__contact-wrapper{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
-    &__main-text{
-        font-size: 24px;
-    }
-    .telegram-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        width: 100%;
-        height: 80px;
-        background-color: $gray-blue;
-        border: none;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 700;
-        border-radius: 90px;
-        @include shadowHover(0.2s , 0px 4px 15px 0px, $gray-blue , pointer)
-    }
-    .whatsapp-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        width: 100%;
-        height: 80px;
-        background-color:$light-lime;
-        border: none;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 700;
-        border-radius: 90px;
-        @include shadowHover(0.2s , 0px 4px 15px 0px, $light-lime, pointer)
-    }
-    .input-feedback{
-        padding-right: 20px;
-        padding-left: 20px;
-        height: 60px;
-        border: 1px solid #C8C8C8;
-        border-radius: 90px;
-        font-size: 20px;
-        color: rgb(0, 0, 0);
-    }
-    .input-feedback::placeholder{
-        color: rgb(129, 129, 129);
-    }
-    .input-feedback-select{
-        padding-left: 20px;
-        height: 66px;
-        border: 1px solid #C8C8C8;
-        border-radius: 90px;
-        font-size: 20px;
-        appearance: none; 
-        background-image: url('../assets/decor/angle-right.svg'); 
-        background-repeat: no-repeat;
-        background-position: calc(100% - 30px);
-        @include ColorHover(0.2s, 'bgcol' , #22d46600 , pointer)
-    }
-    .textaria-feedback-сomment{
-        border-radius: 10px;
-        padding-left: 20px;
-        padding-top: 20px;
-        height: 100px;
-        width: calc(100% - 25px);
-        border: 1px solid #C8C8C8;
-        font-size: 20px;
-        color: rgb(0, 0, 0);
-        resize: none;
-    }
-    .textaria-feedback-сomment::placeholder{
-        color: rgb(129, 129, 129) ;
-    }
-    .chek-box-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 97%;
-    }
-    .submit-button{
-        width: 100%;
-        height: 80px;
-        border-radius: 90px;
-        font-size: 20px;
-        font-weight: 700;
-        color: white;
-        background-color: $dark-color;
-        border: none;
-        @include shadowHover(0.2s , 0px 4px 15px 0px, $dark-color , pointer)
-    }
+@import '../../component/description-block-main';
 
-}
+@import '../../component/price-block-main';
+
+@import '../../component/portfolio-block-main.scss';
+
+@import '../../component/contacts-block-main';

@@ -1,14 +1,21 @@
 import "../css/style.css";
+import {validate , oninputForm} from "./formValidate";
+import { jsonBuild } from "./priceBuild";
+import { select, selectTypeOfSite } from "./selectDropdown";
 
-import draw from "./module.js";
+document.getElementById("formContacts").addEventListener("submit", function(event) {
+    event.preventDefault();
+    if (validate()) {
+        console.log(jsonBuild());
+        document.getElementById('formContacts').reset()
+    }
+});
+document.getElementById("amountPage").addEventListener('input', function() {
+    if(this.value > 256){
+        document.getElementById("amountPage").value = 256;
+    }
+});
+select();
+selectTypeOfSite();
 
-const randomColor = () =>
-  `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-function start() {
-  setInterval(() => {
-    console.clear();
-    draw(randomColor());
-    console.log("Wish  you great daytime!");
-  }, 1000);
-}
-start();
+oninputForm();
