@@ -57,4 +57,26 @@ class DB:
         record = RequestsList.objects(tg_id=tg_id).delete()
 
 
+
+class FiltersDB:
+    @staticmethod
+    def is_admin(tg_id: int):
+        if not AdminsList.objects(tg_id=tg_id):
+            return False
+        else:
+            return True
+
+    @staticmethod
+    def request_is_exists(tg_id: int):
+        if not RequestsList.objects(tg_id=tg_id):
+            return False
+        else: 
+            return True
+
+    @staticmethod
+    def request_is_approved(tg_id: int):
+        if not Receivers.objects(tg_id=tg_id):
+            return False
+        else:
+            return True
     
