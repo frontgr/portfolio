@@ -10,8 +10,30 @@ services:
         - ./nginx.conf:/etc/nginx/nginx.conf
         - ./front/dist:/usr/share/nginx/html
 
-  back:
-    build: ./back
-    container_name: portfolio-backend
+  app:
+    build: ./back/app
+    container_name: portfolio-app
     ports:
-      - "5000:5000"
+      - "8000:8000"
+    environment:
+      - BOT_TOKEN=7235828288:AAGx5T_n4nJLKa5aewXQNeFR-FgSvoorJ3U
+      - DB_URI=mongodb://root:root@mongo:27017
+
+  bot: 
+    build: ./back/bot
+    container_name: portfolio-bot
+    environment:
+      - BOT_TOKEN=7235828288:AAGx5T_n4nJLKa5aewXQNeFR-FgSvoorJ3U
+      - DB_URI=mongodb://root:root@mongo:27017
+      - ADMIN=7014073360
+
+  mongo:
+    image: "mongo:latest"
+    container_name: portfolio-mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/db:/data/db
