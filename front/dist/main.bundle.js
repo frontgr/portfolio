@@ -195,12 +195,18 @@ function updateMaskOnPhone(countryNumber) {
 
 
 
-document.getElementById("submitForm").addEventListener("click", function () {
+document.getElementById("formContacts").addEventListener("submit", function(event) {
+    event.preventDefault();
     if (validate()) {
         console.log(jsonBuild());
+        document.getElementById('formContacts').reset()
     }
 });
-
+document.getElementById("amountPage").addEventListener('input', function() {
+    if(this.value > 256){
+        document.getElementById("amountPage").value = 256;
+    }
+});
 selectDropdown_select();
 selectTypeOfSite();
 
