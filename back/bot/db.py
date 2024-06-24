@@ -40,8 +40,8 @@ class DB:
                 pass
 
     @staticmethod
-    def get_admin():
-        return AdminsList.objects.first().tg_id
+    def get_admins():
+        return [id.tg_id for id in AdminsList.objects]
 
     @staticmethod
     def insert_request(tg_id: int, name: str, username: str): 
