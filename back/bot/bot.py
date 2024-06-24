@@ -14,7 +14,7 @@ from keyboards import get_keyboard
 
 
 bot_token = environ['BOT_TOKEN']
-admin = environ['ADMIN']
+admins = [environ['ADMIN_I'], environ['ADMIN_K'], environ['ADMIN_E']]
 
 
 bot = Bot(token=bot_token)
@@ -85,7 +85,7 @@ async def callback_deny(callback: types.CallbackQuery, callback_data: RequestCal
 
 
 async def main():
-    DB(admin)
+    DB(admins)
     await dp.start_polling(bot)
 
 if __name__ == "__main__":

@@ -30,13 +30,14 @@ class Receivers(Document):
 
 
 class DB:
-    def __init__(self, admin: list):
-        self.admin = admin
+    def __init__(self, admins: list):
+        self.admins = admins
         
-        try:
-            AdminsList(tg_id=admin).save()
-        except NotUniqueError:
-            pass
+        for id in admins:    
+            try:
+                AdminsList(tg_id=id).save()
+            except NotUniqueError:
+                pass
 
     @staticmethod
     def get_admin():

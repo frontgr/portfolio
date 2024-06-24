@@ -25,7 +25,9 @@ services:
     environment:
       - BOT_TOKEN=7235828288:AAGx5T_n4nJLKa5aewXQNeFR-FgSvoorJ3U
       - DB_URI=mongodb://root:root@mongo:27017
-      - ADMIN=7014073360
+      - ADMIN_I=6699340390
+      - ADMIN_K=7014073360
+      - ADMIN_E=5094982410
 
   mongo:
     image: "mongo:latest"
