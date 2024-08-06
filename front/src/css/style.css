@@ -853,14 +853,45 @@ textarea {
     margin-top: 37px;
   }
   .price-block .thin-text {
+    font-family: Montserrat;
     font-weight: 400;
     line-height: 19.5px;
     text-align: center;
     font-size: 16px;
-    margin-top: 21px;
-    padding-left: 55px;
-    padding-right: 55px;
-    height: 80px;
+    padding: 0 52px;
+    margin-top: 20px;
+  }
+  .price-block__card-unit-middle {
+    padding-left: 62px;
+    padding-top: 20px;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .price-block__card-unit-middle .list .list__element {
+    font-family: Montserrat;
+    font-size: 14.85px;
+    font-weight: 500;
+    line-height: 18.1px;
+    text-align: left;
+    color: rgb(87, 87, 87);
+  }
+  .price-block__card-unit-bottom {
+    text-align: center;
+    margin-top: 18px;
+    padding-top: 0;
+  }
+  .price-block__card-unit-bottom h1 {
+    font-family: Montserrat;
+    font-size: 23.76px;
+    font-weight: 700;
+    line-height: 28.96px;
+  }
+  .price-block__card-unit-bottom a {
+    width: 240px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 19px;
   }
   .portfolio-block {
     width: 100vw;
@@ -912,12 +943,27 @@ textarea {
   .contacts-block {
     display: none;
   }
-  footer .wrapper {
+  footer {
     width: 100%;
+  }
+  footer .wrapper {
+    width: 85.5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .wrapper hr {
+    margin-top: 43px;
+    margin-bottom: 0;
   }
   footer .footer__top-menu {
     display: grid;
     grid-template-columns: repeat(1, auto);
+    gap: 22px;
+  }
+  footer .footer__bottom-menu {
+    padding-top: 0;
+    margin-top: 45px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1022,6 +1068,24 @@ textarea {
     margin-left: 0;
     width: 482px;
     height: 482px;
+  }
+  main .scheme-block {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 41px;
+    margin-top: 20px;
+  }
+  main .scheme-block .wrapper {
+    width: auto;
+  }
+  .price-block__menu {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+  }
+  .price-block .price-block__card__card-unit-top h2 {
+    margin-top: 43px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1317,4 +1381,4 @@ textarea {
 .phone-wrapper {
   border-radius: 90px;
   border: 1px solid #c8c8c8;
-}/*# sourceMappingURL=style.css.map */
+}

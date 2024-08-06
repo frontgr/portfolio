@@ -1,7 +1,9 @@
 import "../css/style.css";
+import "./popup-menu.js";
 import {validate , oninputForm} from "./formValidate";
 import { jsonBuild } from "./priceBuild";
 import { select, selectTypeOfSite } from "./selectDropdown";
+
 
 document.getElementById("formContacts").addEventListener("submit", function(event) {
     event.preventDefault();

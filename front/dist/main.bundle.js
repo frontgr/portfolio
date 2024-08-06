@@ -1,6 +1,5 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./src/scripts/priceBuild.js
 const TYPE_SITE_TEXT = {
