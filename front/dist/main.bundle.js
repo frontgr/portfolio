@@ -1,6 +1,75 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
 
+/***/ 333:
+/***/ (() => {
+
+
+var menu_navigation = $("#popup--navigation");
+
+$("#popup--button").on("click", function (e) { 
+    if (!menu_navigation.is(":animated") && !menu_navigation.is(":visible")) {
+        menu_navigation.fadeIn(500);
+    }
+});
+
+$("#popup--button--close").on("click", function (e) { 
+    if (!menu_navigation.is(":animated") && menu_navigation.is(":visible")) {
+        menu_navigation.fadeOut(500, function() {
+        });
+    }
+});
+
+$(document).on("click", ".popup-anchor-link", function (e) {
+    e.preventDefault();
+    
+    var targetAnchor = $(this).attr("href");
+    
+    if (!menu_navigation.is(":animated") && menu_navigation.is(":visible")) {
+        menu_navigation.fadeOut(250, function() {
+            $('html, body').animate({
+                scrollTop: $(targetAnchor).offset().top
+            }, 300);
+        });
+    }
+});
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+
+// EXTERNAL MODULE: ./src/scripts/popup-menu.js
+var popup_menu = __webpack_require__(333);
 ;// CONCATENATED MODULE: ./src/scripts/priceBuild.js
 const TYPE_SITE_TEXT = {
     Лэндинг: "landing",
@@ -194,6 +263,8 @@ function updateMaskOnPhone(countryNumber) {
 
 
 
+
+
 document.getElementById("formContacts").addEventListener("submit", function(event) {
     event.preventDefault();
     if (validate()) {
@@ -210,6 +281,8 @@ selectDropdown_select();
 selectTypeOfSite();
 
 oninputForm();
+
+})();
 
 /******/ })()
 ;
