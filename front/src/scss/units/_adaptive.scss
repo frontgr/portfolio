@@ -118,19 +118,24 @@
         margin-right: auto;
         height: auto;
         padding-top: 31px;
-        padding-bottom: 31px;
-        
+        padding-bottom: 31px;        
         &__menu {
             width: 71vw;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
             gap: 25px 60px;
+            display: flex;
+            flex-wrap: wrap;
         }
         &__card {
-            width: 335px;
+            flex: 1;
+            margin: auto;
+            max-width: 335px;
             padding-left: 0;
             padding-right: 0;
             padding-top: 0;
+        }
+        .price-block__card-unit-top {
+            text-align: center;
+            margin-top: 37px;
         }
         .card-unit-name {
             text-align: center;
@@ -150,9 +155,9 @@
         }
         &__card-unit-middle {
             padding-left: 62px;
-            padding-top: 20px;
             height: auto;
             margin-bottom: 0;
+            margin-top: 18px;
             .list {
                 .list__element {
                     font-family: Montserrat;
@@ -236,7 +241,48 @@
     }
 
     .contacts-block {
-        display: none;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__feedback-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contacts-block__left-block {
+            order: 2;
+            flex: 1;
+            margin: auto;
+            width: 562px;
+            text-align: center;
+            button {
+                margin-left: auto;
+                margin-right: auto;
+                width: 480px;
+                height: 80px;
+            }
+        }
+        .contacts-block__right-block {
+            order: 1;
+            width: 71vw;
+            height: 808px;
+            .contacts-block__image-wrapper {
+                height: 400px;
+            }
+            .contacts-block__text-wrapper {
+                width: auto;
+                margin-left: 130px;
+                margin-right: 130px;
+            }
+        }
     }
 // ------------------FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER ---------------------
     footer {
@@ -344,7 +390,7 @@
                             display: flex;
                             justify-content: center;
                             gap: 28px;
-                            margin-top: 100px;
+                            margin-top: 80px;
                             img {
                                 width: 85px;
                                 height: 85px;
@@ -394,6 +440,52 @@
             
         }
     }
+    .description-block {
+        .wrapper {
+            .main-text {
+                font-family: Montserrat;
+                text-align: center;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 43.88px;
+
+
+            }
+            .second-text {
+                font-family: Montserrat;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24.38px;
+                text-align: center;
+                text-align: center;                
+            }
+            .description-block__menu-card {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 36px;
+                margin-top: 45px;
+                .card {
+                    width: 240px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    .card__text {
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 29.26px;
+                        text-align: center;
+                    }
+                    .second-text {
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19.5px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
     .price-block {
         &__menu {
             display: grid;
@@ -401,9 +493,97 @@
             justify-content: center;
         }
         .price-block__card {
-            &__card-unit-top {
-                h2 {
-                    margin-top: 43px;
+            width: auto;
+            .price-block__card-unit-top {
+                
+
+            }
+            .thin-text {
+                              
+            }
+            .price-block__card-unit-middle {
+                margin-top: 0;
+                ul {
+                    li {
+                        
+
+                    }
+                }
+            }
+            .price-block__card-unit-bottom {
+                margin-top: 0;
+                h1 {
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+
+    .portfolio-block {
+        .wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            width: 84vw;
+            .main-text {
+                
+            }
+            .portfolio-block__slaid-menu {
+                .slaid-card {
+                    width: 84vw;
+                    margin-left: auto;
+                    margin-right: auto;
+                .slaid-card__wrapper-elem {
+                    width: auto;
+                }
+                }
+            }
+            .portfolio-block__arrow-menu {
+                .unit {
+                    .slaid-card__text {
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 29.26px;
+                        text-align: left;
+                    }
+                    .thin-text {
+                        font-family: Montserrat;                        
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24.38px;
+                        text-align: left;
+                    }
+                }
+            }
+            .portfolio-block__arrow-menu {
+                div {
+                    #rightArrow {
+                        margin-right: 0;
+                        margin-left: 22px;
+                    }
+                    button {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .contacts-block {
+        .wrapper {
+            .contacts-block__feedback-menu {
+                .contacts-block__left-block {
+
+                }
+                .contacts-block__right-block {
+                    .contacts-block__image-wrapper {
+
+                    }
+                    .contacts-block__text-wrapper {
+                        margin-left: 60px;
+                        margin-right: 60px;
+                    }
                 }
             }
         }
@@ -496,12 +676,166 @@
             }
         }
     }
-    footer {
-        display: none;
-    }
+    
     main {
-        display: none;
+        .scheme-block {
+            padding-bottom: 50px;
+            .wrapper {
+                width: 80vw;
+                margin-left: auto;
+                margin-right: auto;
+                .table {
+
+                    .table__text {
+                        font-family: Montserrat;
+                        font-size: 28.77px;
+                        font-weight: 700;
+                        line-height: 35.07px;
+                        text-align: left;
+                        margin-top: 45px;                        
+                    }
+                    .table__wrapper {
+                        .table__left {
+                            padding-top: 4px;
+                            img {
+                                height: 82%;
+                            }
+                        }
+                        .table__right {
+                            gap: 31px;
+                            div {
+                                margin: 0;
+                                height: auto;
+                            }
+                            h1 {
+                                font-family: Montserrat;
+                                font-size: 23.97px;
+                                font-weight: 700;
+                                line-height: 29.22px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .portfolio-block {
+            .wrapper {
+                width: 80vw;
+                margin-left: auto;
+                margin-right: auto;
+                .portfolio-block__slaid-menu {
+                    .slaid-card {
+                        height: 367px;
+                        width: 385px;
+                        img {
+                            height: auto;
+                        }
+                    }
+                    .slaid-card__wrapper-elem {
+                        .unit {
+                            .slaid-card__text{
+                                font-family: Montserrat;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 29.26px;
+                                text-align: left;
+
+                            }
+                            .thin-text {
+                                font-family: Montserrat;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 19.5px;
+                                text-align: left;                                
+                            }
+                        }
+                        .circle {
+                            display: none;
+                        }
+                    }
+                }
+                .portfolio-block__arrow-menu {
+                    #rightArrow {
+                        margin-left: 22px;
+                        img {
+                            margin-right: 0;
+                        }
+                    }
+                    #leftArrow {
+                        
+                    }
+                }
+            }
+        }
+        .contacts-block {
+            width: 100vw;
+            .wrapper {
+                width: 80vw;
+                margin-left: auto;
+                margin-right: auto;
+                .contacts-block__left-block {
+                    width: 385px;
+                    .submit-button {
+                        width: 328px;
+                        height: 80px;
+                    }
+                }
+                .contacts-block__right-block {
+                    text-align: center;
+                    width: 100%;
+                    .contacts-block__text-wrapper {
+                        margin-top: 17px;           
+                        .contacts-block__contact-wrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 11px;
+                            justify-content: center;
+                            .telegram-button {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+
+    footer {
+        .footer {
+            height: auto;
+        }
+        .wrapper {
+            .footer__top-menu {
+                padding-top: 31px;
+                display: block;
+                .footer__frist--menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: start;
+                }
+                .footer__second--menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 32px;
+                    gap: 31px 97px;
+                }
+                hr {
+                    margin-top: 25px;
+                }
+            }
+            .footer__bottom-menu {
+                display: block;
+                margin-top: 32px;
+                margin-bottom: 0;
+                padding-bottom: 31px;
+            }
+        }
+    }
+    
 
 
 
@@ -561,9 +895,9 @@
         }
     }
     main {
-        display: none;
+        
     }
     footer {
-        display: none;
+        
     }
 }
