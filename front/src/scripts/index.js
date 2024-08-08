@@ -8,7 +8,7 @@ import { select, selectTypeOfSite } from "./selectDropdown";
 document.getElementById("formContacts").addEventListener("submit", function(event) {
     event.preventDefault();
     if (validate()) {
-        console.log(jsonBuild());
+        // console.log(jsonBuild());
         fetch('http://localhost:8000/notify', {
             method: 'POST',
             headers: {
@@ -16,7 +16,6 @@ document.getElementById("formContacts").addEventListener("submit", function(even
             },
             body: JSON.stringify(jsonBuild())
         }).then(response=>console.log(response))
-        console.log(123);
         
         document.getElementById('formContacts').reset()
     }
