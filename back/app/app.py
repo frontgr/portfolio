@@ -3,6 +3,7 @@ from os import environ
 from pymongo import MongoClient
 
 from fastapi import FastAPI, Response, status
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr
 
 from aiogram import Bot
@@ -15,6 +16,20 @@ db = client.Portfolio
 
 app = FastAPI()
 bot = Bot(token=bot_token)
+
+origins = [
+    "http://localhost",  
+    "http://localhost:8000", 
+    "http://127.0.0.1:8000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
 
 class RequestModel(BaseModel):
     name: str
