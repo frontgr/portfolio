@@ -1332,11 +1332,14 @@ textarea {
     margin-right: auto;
   }
   main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card {
-    height: 367px;
+    height: auto;
     width: 385px;
   }
   main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card img {
     height: auto;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit {
+    width: 100%;
   }
   main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit .slaid-card__text {
     font-family: Montserrat;
@@ -1379,9 +1382,13 @@ textarea {
   main .contacts-block .wrapper .contacts-block__right-block {
     text-align: center;
     width: 100%;
+    height: auto;
+    padding-bottom: 30px;
   }
   main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper {
     margin-top: 17px;
+    margin-left: 32px !important;
+    margin-right: 32px !important;
   }
   main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper .contacts-block__contact-wrapper {
     display: flex;
@@ -1389,8 +1396,8 @@ textarea {
     gap: 11px;
     justify-content: center;
   }
-  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper .contacts-block__contact-wrapper .telegram-button {
-    margin-top: 0;
+  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper .telegram-button {
+    margin-top: 17px !important;
   }
   footer .footer {
     height: auto;
@@ -1411,6 +1418,9 @@ textarea {
     justify-content: space-between;
     margin-top: 32px;
     gap: 31px 97px;
+  }
+  footer .wrapper .footer__top-menu .footer__second--menu div:nth-child(2) {
+    order: 3;
   }
   footer .wrapper .footer__top-menu hr {
     margin-top: 25px;
@@ -1462,6 +1472,319 @@ textarea {
     height: 313x;
     margin-left: -60px;
     margin-top: 180px;
+  }
+  main .scheme-block {
+    padding-bottom: 30px;
+  }
+  main .scheme-block .wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .scheme-block .wrapper .table .table__text {
+    font-family: Montserrat;
+    font-size: 21.05px;
+    font-weight: 700;
+    line-height: 25.66px;
+    text-align: left;
+    margin-top: 28px;
+  }
+  main .scheme-block .wrapper .table .table__wrapper {
+    margin-top: 15px;
+  }
+  main .scheme-block .wrapper .table .table__wrapper .table__left {
+    padding-top: 4px;
+  }
+  main .scheme-block .wrapper .table .table__wrapper .table__left img {
+    height: 82%;
+  }
+  main .scheme-block .wrapper .table .table__wrapper .table__right {
+    gap: 23px 0;
+  }
+  main .scheme-block .wrapper .table .table__wrapper .table__right div {
+    margin: 0;
+    height: auto;
+  }
+  main .scheme-block .wrapper .table .table__wrapper .table__right h1 {
+    font-family: Montserrat;
+    font-size: 17.54px;
+    font-weight: 700;
+    line-height: 21.38px;
+    text-align: left;
+  }
+  main .scheme-block .wrapper .table .table__wrapper .table__right h2 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    margin-top: 5px;
+  }
+  main .description-block {
+    padding-top: 31px;
+  }
+  main .description-block .wrapper .main-text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: left;
+  }
+  main .description-block .wrapper .second-text {
+    margin-top: 21px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+  }
+  main .description-block .wrapper .description-block__menu-card {
+    margin-top: 51px;
+    padding-bottom: 50px;
+  }
+  main .description-block .wrapper .description-block__menu-card .card h2 {
+    margin-top: 0;
+  }
+  main .price-block {
+    width: 87.5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .price-block .wrapper {
+    width: 100%;
+  }
+  main .price-block .wrapper .price-block__menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card {
+    width: 280px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-top h2 {
+    font-size: 24px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-top .thin-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.41px;
+    text-align: center;
+    padding: 0 11px;
+    margin-top: 28px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-middle {
+    padding: 0 19px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-middle ul {
+    margin-top: 25px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-middle ul li {
+    margin-bottom: 17px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-middle ul li:last-child {
+    margin-bottom: 21px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-bottom h1 {
+    font-size: 27px;
+  }
+  main .price-block .wrapper .price-block__menu .price-block__card .price-block__card-unit-bottom a {
+    width: 240px;
+    height: 52px;
+    font-family: Montserrat;
+    font-size: 17.06px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: center;
+  }
+  main .portfolio-block .wrapper {
+    width: 87.5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .portfolio-block .wrapper .main-text {
+    text-align: center;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card {
+    height: 314px;
+    width: 280px;
+    overflow: hidden;
+    text-align: left;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card img {
+    height: 185px;
+    width: 378px;
+    position: relative;
+    left: -90px;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem {
+    justify-content: center;
+    padding: 0;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit {
+    width: 100%;
+    height: auto;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit .slaid-card__text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: center;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit .thin-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .circle {
+    display: none;
+  }
+  main .portfolio-block .wrapper .portfolio-block__arrow-menu #rightArrow img {
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+  }
+  main .portfolio-block .wrapper .portfolio-block__arrow-menu #leftArrow img {
+    width: 50px;
+    height: 50px;
+  }
+  main .contacts-block {
+    width: 100vw;
+  }
+  main .contacts-block .wrapper {
+    width: 87.5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .contacts-block .wrapper .contacts-block__feedback-menu {
+    gap: 30px;
+  }
+  main .contacts-block .wrapper .contacts-block__left-block {
+    width: 87.5vw;
+  }
+  main .contacts-block .wrapper .contacts-block__left-block .main-text {
+    font-family: Montserrat;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32.91px;
+    text-align: center;
+    margin-bottom: 40px !important;
+  }
+  main .contacts-block .wrapper .contacts-block__left-block .submit-button {
+    width: 87.5vw;
+    height: 80px;
+  }
+  main .contacts-block .wrapper .contacts-block__left-block .input-feedback {
+    height: 70px;
+  }
+  main .contacts-block .wrapper .contacts-block__left-block .input-feedback .chek-box-wrapper .normal-text {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: center;
+  }
+  main .contacts-block .wrapper .contacts-block__left-block .input-feedback .chek-box-wrapper .tg_text {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.29px;
+    text-align: left;
+  }
+  main .contacts-block .wrapper .contacts-block__right-block {
+    text-align: center;
+    height: auto;
+    width: 87.5vw;
+    padding-bottom: 15px;
+  }
+  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__image-wrapper {
+    height: 293px;
+    width: auto;
+    align-items: center;
+  }
+  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__image-wrapper .contacts-block__image {
+    width: 197px;
+    height: 206px;
+  }
+  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper {
+    margin-top: 17px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper .contacts-block__contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    justify-content: center;
+  }
+  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper .contacts-block__contact-wrapper a {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+  }
+  main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper .contacts-block__contact-wrapper .telegram-button {
+    margin-top: 0;
+  }
+  footer .footer {
+    height: auto;
+  }
+  footer .wrapper .footer__top-menu {
+    padding-top: 31px;
+    display: block;
+  }
+  footer .wrapper .footer__top-menu .footer__frist--menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+  }
+  footer .wrapper .footer__top-menu .footer__frist--menu a {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.72px;
+    text-align: left;
+  }
+  footer .wrapper .footer__top-menu .footer__second--menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+    gap: 31px 97px;
+  }
+  footer .wrapper .footer__top-menu .footer__second--menu .footer__text {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.72px;
+    text-align: left;
+  }
+  footer .wrapper .footer__top-menu .footer__second--menu div:nth-child(1) {
+    order: 2;
+  }
+  footer .wrapper .footer__top-menu .footer__second--menu div:nth-child(2) {
+    order: 3;
+  }
+  footer .wrapper .footer__top-menu hr {
+    margin-top: 25px;
+  }
+  footer .wrapper .footer__bottom-menu {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding-bottom: 31px;
+  }
+  footer .wrapper .footer__bottom-menu .footer__info-text {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.72px;
+    text-align: left;
   }
 }
 .popup {

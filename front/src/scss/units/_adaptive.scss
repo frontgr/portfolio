@@ -727,7 +727,7 @@
                 margin-right: auto;
                 .portfolio-block__slaid-menu {
                     .slaid-card {
-                        height: 367px;
+                        height: auto;
                         width: 385px;
                         img {
                             height: auto;
@@ -735,13 +735,13 @@
                     }
                     .slaid-card__wrapper-elem {
                         .unit {
+                            width: 100%;
                             .slaid-card__text{
                                 font-family: Montserrat;
                                 font-size: 24px;
                                 font-weight: 700;
                                 line-height: 29.26px;
                                 text-align: left;
-
                             }
                             .thin-text {
                                 font-family: Montserrat;
@@ -785,17 +785,22 @@
                 .contacts-block__right-block {
                     text-align: center;
                     width: 100%;
+                    height: auto;
+                    padding-bottom: 30px;
                     .contacts-block__text-wrapper {
-                        margin-top: 17px;           
+                        margin-top: 17px;
+                        margin-left: 32px !important;
+                        margin-right: 32px !important;         
                         .contacts-block__contact-wrapper {
                             display: flex;
                             flex-wrap: wrap;
                             gap: 11px;
                             justify-content: center;
-                            .telegram-button {
-                                margin-top: 0;
-                            }
+                            
                         }
+                        .telegram-button {
+                                margin-top: 17px !important;
+                            }
                     }
                 }
             }
@@ -822,6 +827,9 @@
                     justify-content: space-between;
                     margin-top: 32px;
                     gap: 31px 97px;
+                    div:nth-child(2) {
+                        order: 3;
+                    }
                 }
                 hr {
                     margin-top: 25px;
@@ -895,9 +903,355 @@
         }
     }
     main {
-        
+        .scheme-block {
+            padding-bottom: 30px;
+            .wrapper {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                .table {
+
+                    .table__text {
+                        font-family: Montserrat;
+                        font-size: 21.05px;
+                        font-weight: 700;
+                        line-height: 25.66px;
+                        text-align: left;
+                        margin-top: 28px;
+                    }
+                    .table__wrapper {
+                        margin-top: 15px;
+                        .table__left {
+                            padding-top: 4px;
+                            img {
+                                height: 82%;
+                            }
+                        }
+                        .table__right {
+                            gap: 23px 0;
+                            div {
+                                margin: 0;
+                                height: auto;
+                            }
+                            h1 {
+                                font-family: Montserrat;
+                                font-size: 17.54px;
+                                font-weight: 700;
+                                line-height: 21.38px;
+                                text-align: left;
+                            }
+                            h2 {
+                                font-family: Montserrat;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 17.07px;
+                                text-align: left;
+                                margin-top: 5px;                            
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .description-block {
+            padding-top: 31px;
+            .wrapper {
+                .main-text {
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 29.26px;
+                    text-align: left;            
+                }
+                .second-text {
+                    margin-top: 21px;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.5px;
+                    text-align: center;                                      
+                }
+                .description-block__menu-card {
+                    margin-top: 51px;
+                    padding-bottom: 50px;
+                    .card {
+                        h1 {
+
+                        }
+                        h2 {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .price-block {
+            width: 87.5vw;
+            margin-left: auto;
+            margin-right: auto;
+            .wrapper {
+                width: 100%;
+                .price-block__menu {
+                    margin-left: auto;
+                    margin-right: auto;
+                    .price-block__card {
+                        width: 280px;
+                        .price-block__card-unit-top {
+                            h2 {
+                                font-size: 24px;
+                            }
+                            .thin-text {
+                                font-family: Montserrat;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 22.41px;
+                                text-align: center;
+                                padding: 0 11px;
+                                margin-top: 28px;
+                            }
+                        }
+                        .price-block__card-unit-middle {
+                            padding: 0 19px;
+                            ul {
+                                margin-top: 25px;
+                                li {
+                                    margin-bottom: 17px;
+                                }
+                                li:last-child {
+                                    margin-bottom: 21px;
+                                }
+                            }
+                        }
+                        .price-block__card-unit-bottom {
+                            h1 {
+                                font-size: 27px;
+                            }
+                            a {
+                                width: 240px;
+                                height: 52px;
+                                font-family: Montserrat;
+                                font-size: 17.06px;
+                                font-weight: 500;
+                                line-height: 20.8px;
+                                text-align: center;                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .portfolio-block {
+            .wrapper {
+                width: 87.5vw;
+                margin-left: auto;
+                margin-right: auto;
+                .main-text {
+                    text-align: center;                    
+                }
+                .portfolio-block__slaid-menu {
+                    .slaid-card {
+                        height: 314px;
+                        width: 280px;
+                        overflow: hidden;
+                        text-align: left;
+                        img {
+                            height: 185px;
+                            width: 378px;
+                            position: relative;
+                            left: -90px;
+                        }
+                    }
+                    .slaid-card__wrapper-elem {
+                        justify-content: center;
+                        padding: 0;
+                        .unit {
+                            width: 100%;
+                            height: auto;
+                            .slaid-card__text{                                
+                                font-family: Montserrat;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 29.26px;
+                                text-align: center;                                
+                            }
+                            .thin-text {
+                                font-family: Montserrat;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 17.07px;
+                                text-align: left;
+                                margin-left: 20px;
+                                margin-right: 20px;                                                          
+                            }
+                        }
+                        .circle {
+                            display: none;
+                        }
+                    }
+                }
+                .portfolio-block__arrow-menu {
+                    #rightArrow {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            margin-left: 0;
+                        }
+                    }
+                    #leftArrow {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contacts-block {
+            width: 100vw;
+            .wrapper {
+                width: 87.5vw;
+                margin-left: auto;
+                margin-right: auto;
+                .contacts-block__feedback-menu {
+                    gap: 30px;
+                }
+                .contacts-block__left-block {
+                    width: 87.5vw;
+                    .main-text {
+                        font-family: Montserrat;
+                        font-size: 27px;
+                        font-weight: 700;
+                        line-height: 32.91px;
+                        text-align: center;
+                        margin-bottom: 40px !important;
+                    }
+                    .submit-button {
+                        width: 87.5vw;
+                        height: 80px;
+                    }
+                    .input-feedback {
+                        height: 70px;
+                        .chek-box-wrapper {
+                            .normal-text {
+                                font-family: Montserrat;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 14.63px;
+                                text-align: center;
+                            }
+                            .tg_text {
+                                font-family: Montserrat;
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 18.29px;
+                                text-align: left;
+
+                            }
+                        }
+                    }
+                }
+                .contacts-block__right-block {
+                    text-align: center;
+                    height: auto;
+                    width: 87.5vw;
+                    padding-bottom: 15px;
+                    .contacts-block__image-wrapper {
+                        height: 293px;
+                        width: auto;
+                        align-items: center;
+                        .contacts-block__image {
+                            width: 197px;
+                            height: 206px;
+                        }
+                    }
+                    .contacts-block__text-wrapper {
+                        margin-top: 17px;
+                        margin-left: 10px !important;   
+                        margin-right: 10px !important; 
+                          
+                        .contacts-block__contact-wrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 11px;
+                            justify-content: center;
+                            a {
+                                text-align: left;
+                                font-size: 20px;
+                                font-weight: 400;
+                                line-height: 24.38px;
+                            }
+                            .telegram-button {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     footer {
-        
+        .footer {
+            height: auto;
+        }
+        .wrapper {
+            .footer__top-menu {
+                padding-top: 31px;
+                display: block;
+                .footer__frist--menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: start;
+                    a {
+                        font-family: Montserrat;
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 20.72px;
+                        text-align: left;
+                    }
+                }
+                .footer__second--menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin-top: 32px;
+                    gap: 31px 97px;
+                    .footer__text {
+                        font-family: Montserrat;
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 20.72px;
+                        text-align: left;
+                    }
+                    div:nth-child(1) {
+                        order: 2;
+                    }
+                    
+                    div:nth-child(2) {
+                        order: 3;
+                    }
+                }
+                
+                hr {
+                    margin-top: 25px;
+                }
+            }
+            .footer__bottom-menu {
+                display: block;
+                margin-top: 32px;
+                margin-bottom: 0;
+                padding-bottom: 31px;
+                .footer__info-text {
+                    font-family: Montserrat;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 20.72px;
+                    text-align: left;
+                }
+            }
+        }
     }
 }
