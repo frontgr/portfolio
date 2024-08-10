@@ -24,7 +24,7 @@
 
         <title>FrontGR - Разработка сайтов и веб-приложений</title>
     </head>
-    <body>
+    <body id="Body">
         <header>
             <div class="cap">
                 <div class="cap__wrapper">
@@ -44,7 +44,7 @@
                                     <li><a href="#Portfolio">Портфолио</a></li>
                                     <li><a href="#Price">Цены</a></li>
                                     <li>
-                                        <a href="https://t.me/frontgrweb"
+                                        <a href="https://t.me/frontgrweb" target="_blank"
                                             >Стажировка</a
                                         >
                                     </li>
@@ -53,11 +53,13 @@
                             </nav>
                             <div class="top-menu__contacts">
                                 <a href="https://t.me/frontgrweb"
+                                target="_blank"
                                     ><img
                                         src="./assets/logo/telegram.svg"
                                         alt="telegram logotype svg"
                                 /></a>
                                 <a href="https://wa.me/79876543210"
+                                target="_blank"
                                     ><img
                                         src="./assets/logo/whatsapp.svg"
                                         alt="whatsapp logotype svg"
@@ -100,7 +102,7 @@
                                         <li>
                                             <a
                                                 class="popup-anchor-link"
-                                                href="#"
+                                                href="#Body"
                                                 >Главная</a
                                             >
                                         </li>
@@ -127,8 +129,8 @@
                                         </li>
                                         <li>
                                             <a
-                                                class="popup-anchor-link"
                                                 href="https://t.me/frontgrweb"
+                                                target="_blank"
                                                 >Стажировка</a
                                             >
                                         </li>
@@ -247,6 +249,9 @@
                                             Заказчик получает все материалы и
                                             доступы к сайту
                                         </h2>
+<!---------------- Пустышка, необходима для правильного перемещения к якорю! ---------------->
+<div id="AboutUs"></div>
+<!------------------------------------------------------------------------------------------->
                                     </div>
                                 </div>
                             </div>
@@ -254,7 +259,7 @@
                     </div>
                 </div>
             </div>
-            <div class="description-block black" id="AboutUs">
+            <div class="description-block black">
                 <div class="wrapper">
                     <h1 class="main-text">Почему именно мы</h1>
                     <h2 class="second-text">
@@ -300,11 +305,14 @@
                                 В течение дня мы не пропадаем и оперативно
                                 решаем любые вопросы.
                             </h2>
+<!---------------- Пустышка, необходима для правильного перемещения к якорю! ---------------->
+                            <div id="Price"></div>
+<!------------------------------------------------------------------------------------------->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="price-block white" id="Price">
+            <div class="price-block white">
                 <div class="wrapper">
                     <div class="price-block__menu">
                         <div class="price-block__card">
@@ -339,7 +347,7 @@
                             </div>
                             <div class="price-block__card-unit-bottom">
                                 <h1>От 30 000 руб.</h1>
-                                <a href="#" class="price-block__btn-buy"
+                                <a href="#Contacts" class="price-block__btn-buy"
                                     >Заказать</a
                                 >
                             </div>
@@ -376,7 +384,7 @@
                             </div>
                             <div class="price-block__card-unit-bottom">
                                 <h1>от 50 000 руб.</h1>
-                                <a href="#" class="price-block__btn-buy"
+                                <a href="#Contacts" class="price-block__btn-buy"
                                     >Заказать</a
                                 >
                             </div>
@@ -411,23 +419,28 @@
                             </div>
                             <div class="price-block__card-unit-bottom">
                                 <h1>От 30 000 руб.</h1>
-                                <a href="#" class="price-block__btn-buy"
+                                <a href="#Contacts" class="price-block__btn-buy"
                                     >Заказать</a
                                 >
                             </div>
+<!---------------- Пустышка, необходима для правильного перемещения к якорю! ---------------->
+<div id="Portfolio"></div>
+<!------------------------------------------------------------------------------------------->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="portfolio-block" id="Portfolio">
+            <div class="portfolio-block">
                 <div class="wrapper">
                     <h2 class="main-text">Наши работы</h2>
                     <div class="portfolio-block__slaid-menu">
                         <div class="slaid-card">
-                            <img
+                            <a href="https://kadaconstruction.ru/" target="_blank">
+                                <img
                                 src="./assets/decor/kadaconstruction.png"
                                 alt="kadaconstruction backgroung image"
-                            />
+                                />
+                            </a>
                             <div class="slaid-card__wrapper-elem">
                                 <div class="unit">
                                     <h2 class="slaid-card__text">
@@ -440,7 +453,7 @@
                                 </div>
                                 <div>
                                     <div class="circle black">
-                                        <a href="https://kadaconstruction.ru/">
+                                        <a href="https://kadaconstruction.ru/" target="_blank"> 
                                             <img
                                                 src="./assets/decor/arrow-right.svg"
                                                 alt="arrow right decor for btn"
@@ -452,10 +465,12 @@
                             </div>
                         </div>
                         <div class="slaid-card">
-                            <img
-                                src="./assets/decor/alpha-affiliates.png"
-                                alt="alphaaffiliates backgroung image"
-                            />
+                            <a href="https://alphaaffiliatescareers.com/" target="_blank">   
+                                <img
+                                    src="./assets/decor/alpha-affiliates.png"
+                                    alt="alphaaffiliates backgroung image"
+                                />
+                            </a>
                             <div class="slaid-card__wrapper-elem">
                                 <div class="unit">
                                     <h2 class="slaid-card__text">
@@ -466,10 +481,14 @@
                                         компании Alpha affiliates
                                     </h2>
                                 </div>
+<!---------------- Пустышка, необходима для правильного перемещения к якорю! ---------------->
+<div id="Contacts"></div>
+<!------------------------------------------------------------------------------------------->
                                 <div>
                                     <div class="circle black">
                                         <a
                                             href="https://alphaaffiliatescareers.com/"
+                                            target="_blank"
                                         >
                                             <img
                                                 src="./assets/decor/arrow-right.svg"
@@ -482,6 +501,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="portfolio-block__arrow-menu">
                         <div>
                             <button id="leftArrow">
@@ -500,7 +520,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contacts-block white" id="Contacts">
+            <div class="contacts-block white">
                 <div class="wrapper">
                     <div class="contacts-block__feedback-menu">
                         <form
@@ -738,6 +758,7 @@
                                         />
                                         <a
                                             href="tel:+79876543210"
+                                            target="_blank"
                                             class="thinest-text"
                                             >+7(987)654-32-10</a
                                         >
@@ -763,11 +784,13 @@
                                 </div>
                                 <a
                                     href="https://t.me/frontgrweb"
+                                    target="_blank"
                                     class="telegram-button"
                                     >Telegram</a
                                 >
                                 <a
                                     href="https://wa.me/79876543210"
+                                    target="_blank"
                                     class="whatsapp-button"
                                     >Whatsapp</a
                                 >
@@ -786,7 +809,7 @@
                             <a href="#AboutUs">О нас</a>
                             <a href="#Portfolio">Портфолио</a>
                             <a href="#Price">Цены</a>
-                            <a href="https://t.me/frontgrweb">Стажировка</a>
+                            <a href="https://t.me/frontgrweb" target="_blank">Стажировка</a>
                             <a href="#Contacts">Контакты</a>
                         </div>
                         <div class="top-menu-wrap footer__second--menu">
@@ -825,14 +848,16 @@
                                 >
                             </div>
                             <div style="display: flex; gap: 10px;">
-                                <a href="https://t.me/frontgrweb"
+                                <a href="https://t.me/frontgrweb" target="_blank"
                                     ><img
                                         src="./assets/logo/telegram.svg"
+                                        
                                         alt="telegram logotype svg"
                                 /></a>
-                                <a href="https://wa.me/79876543210"
+                                <a href="https://wa.me/79876543210" target="_blank"
                                     ><img
                                         src="./assets/logo/whatsapp.svg"
+                                        
                                         alt="whatsapp logotype svg"
                                 /></a>
                                 <a href="mailto:mail@frontgr.com"

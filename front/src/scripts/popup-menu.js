@@ -1,4 +1,3 @@
-
 var menu_navigation = $("#popup--navigation");
 
 $("#popup--button").on("click", function (e) { 
