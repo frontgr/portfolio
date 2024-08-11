@@ -1,5 +1,6 @@
 import "../css/style.css";
 import "./popup-menu.js";
+import "./slider.js";
 import {validate , oninputForm} from "./formValidate";
 import { jsonBuild } from "./priceBuild";
 import { select, selectTypeOfSite } from "./selectDropdown";

@@ -1,7 +1,83 @@
 // Пример того, как нужно делать медиа запросы без дублирования стилей
 @media screen and (max-width: 1600px) {
+    .portfolio-block {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding-top: 45px;
+        padding-bottom: 34px;
+        height: auto;
+        .wrapper {
+            width: 75vw;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+        &__slaid-menu {
+            display: inline-flex;
+            gap: 30px;
+        }
+        .slaid-card {
+            width: 585px;
+            height: 420px;
+        }
+        .FirstCard {
+            order: 2;
+        }
+    }
 }
 @media screen and (max-width: 1440px) {
+    header {
+        .cap {
+        .cap__wrapper {
+            width: 83.3% !important;
+            .top-menu {
+                .top-menu__wrapper {
+            width: 83.3vw;
+            margin-right: auto;        
+            overflow: hidden;        
+            margin-left: auto;
+
+                }
+            }
+        }
+    }
+}
+    .wrapper {
+        margin-right: auto;        
+        overflow: hidden;
+        width: 83.3vw;
+        margin-left: auto;
+    }
+    .portfolio-block {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding-top: 45px;
+        padding-bottom: 34px;
+        height: auto;
+        .wrapper {
+            margin-left: 148px;
+            margin-right: auto;        
+            overflow: hidden;
+            width: 83.3vw;
+            margin-left: auto;
+        }
+        &__slaid-menu {
+            display: inline-flex;
+            gap: 30px;
+            
+        }
+        .slaid-card {
+            width: 585px;
+            height: 420px;
+        }
+    }
+    .FirstCard {
+        order: 2;
+    }
 }
 @media screen and (max-width: 1024px) {
     header {
@@ -43,10 +119,12 @@
 //  ---------------MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN ------------------------------
     main {
         width: 1024px;
-    }
-
-    .wrapper {
-        margin: 0;
+        .wrapper {
+            margin: 0;
+            width: 71vw;
+            margin-right: auto;
+            margin-left: auto;
+        }        
     }
 
     .scheme-block {
@@ -197,10 +275,12 @@
         padding-top: 45px;
         padding-bottom: 34px;
         height: auto;
-        .wrapper {
-            margin-left: 148px;
-            margin-right: auto;        
+        .wrapper {       
             overflow: hidden;
+            margin: 0;
+            width: 71vw;
+            margin-right: auto;
+            margin-left: auto;
         }
         &__slaid-menu {
             display: inline-flex;
@@ -208,7 +288,7 @@
             
         }
         .slaid-card {
-            width: 730px;
+            width: 727px;
             height: 455px;
             .slaid-card__img {
                 height: 311px;

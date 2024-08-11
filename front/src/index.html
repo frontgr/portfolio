@@ -431,10 +431,10 @@
                 </div>
             </div>
             <div class="portfolio-block">
-                <div class="wrapper">
+                <div class="wrapper swiper">
                     <h2 class="main-text">Наши работы</h2>
-                    <div class="portfolio-block__slaid-menu">
-                        <div class="slaid-card">
+                    <div class="portfolio-block__slaid-menu swiper-wrapper">
+                        <div class="slaid-card swiper-slide" id="FirstCard">
                             <a href="https://kadaconstruction.ru/" target="_blank">
                                 <img
                                 src="./assets/decor/kadaconstruction.png"
@@ -464,7 +464,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slaid-card">
+                        <div class="slaid-card swiper-slide" id="SecondCard">
                             <a href="https://alphaaffiliatescareers.com/" target="_blank">   
                                 <img
                                     src="./assets/decor/alpha-affiliates.png"
@@ -504,13 +504,13 @@
 
                     <div class="portfolio-block__arrow-menu">
                         <div>
-                            <button id="leftArrow">
+                            <button class="swiper-button-prev" id="leftArrow">
                                 <img
                                     src="./assets/decor/arrow-left-btn.svg"
                                     alt="left arrow btn icon"
                                 />
                             </button>
-                            <button id="rightArrow">
+                            <button class="swiper-button-next" id="rightArrow">
                                 <img
                                     src="./assets/decor/arrow-right-btn.svg"
                                     alt="right arrow btn icon"

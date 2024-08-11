@@ -736,6 +736,78 @@ textarea {
   border: 1px solid #4F4F4F;
 }
 
+@media screen and (max-width: 1600px) {
+  .portfolio-block {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 34px;
+    height: auto;
+  }
+  .portfolio-block .wrapper {
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+  .portfolio-block__slaid-menu {
+    display: inline-flex;
+    gap: 30px;
+  }
+  .portfolio-block .slaid-card {
+    width: 585px;
+    height: 420px;
+  }
+  .portfolio-block .FirstCard {
+    order: 2;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header .cap .cap__wrapper {
+    width: 83.3% !important;
+  }
+  header .cap .cap__wrapper .top-menu .top-menu__wrapper {
+    width: 83.3vw;
+    margin-right: auto;
+    overflow: hidden;
+    margin-left: auto;
+  }
+  .wrapper {
+    margin-right: auto;
+    overflow: hidden;
+    width: 83.3vw;
+    margin-left: auto;
+  }
+  .portfolio-block {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 34px;
+    height: auto;
+  }
+  .portfolio-block .wrapper {
+    margin-left: 148px;
+    margin-right: auto;
+    overflow: hidden;
+    width: 83.3vw;
+    margin-left: auto;
+  }
+  .portfolio-block__slaid-menu {
+    display: inline-flex;
+    gap: 30px;
+  }
+  .portfolio-block .slaid-card {
+    width: 585px;
+    height: 420px;
+  }
+  .FirstCard {
+    order: 2;
+  }
+}
 @media screen and (max-width: 1024px) {
   header .cap {
     overflow-x: hidden;
@@ -765,8 +837,11 @@ textarea {
   main {
     width: 1024px;
   }
-  .wrapper {
+  main .wrapper {
     margin: 0;
+    width: 71vw;
+    margin-right: auto;
+    margin-left: auto;
   }
   .scheme-block {
     margin-top: 50px;
@@ -909,16 +984,18 @@ textarea {
     height: auto;
   }
   .portfolio-block .wrapper {
-    margin-left: 148px;
-    margin-right: auto;
     overflow: hidden;
+    margin: 0;
+    width: 71vw;
+    margin-right: auto;
+    margin-left: auto;
   }
   .portfolio-block__slaid-menu {
     display: inline-flex;
     gap: 100px;
   }
   .portfolio-block .slaid-card {
-    width: 730px;
+    width: 727px;
     height: 455px;
   }
   .portfolio-block .slaid-card .slaid-card__img {
