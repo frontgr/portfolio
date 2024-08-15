@@ -30,22 +30,21 @@
 @media screen and (max-width: 1440px) {
     header {
         .cap {
-        .cap__wrapper {
-            width: 83.3% !important;
-            .top-menu {
-                .top-menu__wrapper {
-            width: 83.3vw;
-            margin-right: auto;        
-            overflow: hidden;        
-            margin-left: auto;
-
+            .cap__wrapper {
+                width: 83.3% !important;
+                .top-menu {
+                    .top-menu__wrapper {
+                        width: 83.3vw;
+                        margin-right: auto;
+                        overflow: hidden;
+                        margin-left: auto;
+                    }
                 }
             }
         }
     }
-}
     .wrapper {
-        margin-right: auto;        
+        margin-right: auto;
         overflow: hidden;
         width: 83.3vw;
         margin-left: auto;
@@ -60,7 +59,7 @@
         height: auto;
         .wrapper {
             margin-left: 148px;
-            margin-right: auto;        
+            margin-right: auto;
             overflow: hidden;
             width: 83.3vw;
             margin-left: auto;
@@ -68,7 +67,6 @@
         &__slaid-menu {
             display: inline-flex;
             gap: 30px;
-            
         }
         .slaid-card {
             width: 585px;
@@ -77,6 +75,11 @@
     }
     .FirstCard {
         order: 2;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .price-block .list li {
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -89,24 +92,24 @@
                     &__wrapper {
                         width: 84.37%;
                     }
-                &__navigation {
-                    ul {
-                        gap: 12px;
-                        li {
-                        font-size: 16px;
+                    &__navigation {
+                        ul {
+                            gap: 12px;
+                            li {
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
-                }
-                }
-                
-                .middle-menu { 
+
+                .middle-menu {
                     &__left {
                         width: 613px;
                         padding-top: 134px;
                         h1 {
                             font-size: 48px;
                         }
-                    }                   
+                    }
                     &__right {
                         img {
                             margin-top: 69px;
@@ -116,7 +119,7 @@
             }
         }
     }
-//  ---------------MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN ------------------------------
+    //  ---------------MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN ------------------------------
     main {
         width: 1024px;
         .wrapper {
@@ -124,7 +127,7 @@
             width: 71vw;
             margin-right: auto;
             margin-left: auto;
-        }        
+        }
     }
 
     .scheme-block {
@@ -147,16 +150,15 @@
         justify-content: center;
         padding-top: 43px;
         height: auto;
-        .wrapper {            
-        width: 84vw;
-        margin-right: auto;
-        margin-left: auto;
+        .wrapper {
+            width: 84vw;
+            margin-right: auto;
+            margin-left: auto;
             h1 {
                 font-weight: 700;
                 font-size: 36px;
                 line-height: 43.88px;
                 text-align: left;
-
             }
             h2 {
                 font-size: 20px;
@@ -177,14 +179,13 @@
                     font-size: 24px;
                     text-align: center;
                     line-height: 29.26px;
-
                 }
                 h2 {
                     font-family: Montserrat;
                     text-align: center;
                     font-weight: 400;
                     font-size: 16px;
-                    line-height: 19.5px;                    
+                    line-height: 19.5px;
                 }
             }
         }
@@ -196,7 +197,7 @@
         margin-right: auto;
         height: auto;
         padding-top: 31px;
-        padding-bottom: 31px;        
+        padding-bottom: 31px;
         &__menu {
             width: 71vw;
             gap: 25px 60px;
@@ -275,7 +276,7 @@
         padding-top: 45px;
         padding-bottom: 34px;
         height: auto;
-        .wrapper {       
+        .wrapper {
             overflow: hidden;
             margin: 0;
             width: 71vw;
@@ -285,7 +286,6 @@
         &__slaid-menu {
             display: inline-flex;
             gap: 100px;
-            
         }
         .slaid-card {
             width: 727px;
@@ -298,14 +298,12 @@
                 font-size: 24px;
                 text-align: left;
                 line-height: 29.26px;
-
             }
             .thin-text {
                 font-weight: 400;
                 font-size: 20px;
                 text-align: left;
                 line-height: 24.38px;
-
             }
             &__wrapper-elem {
                 padding-top: 0;
@@ -315,7 +313,7 @@
         &__arrow-menu {
             margin-top: 18px;
             #rightArrow {
-                margin-right: 35px
+                margin-right: 35px;
             }
         }
     }
@@ -364,7 +362,7 @@
             }
         }
     }
-// ------------------FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER ---------------------
+    // ------------------FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER ---------------------
     footer {
         width: 100%;
         .wrapper {
@@ -372,9 +370,9 @@
             margin-left: auto;
             margin-right: auto;
             hr {
-            margin-top: 43px;
-            margin-bottom: 0;
-        }
+                margin-top: 43px;
+                margin-bottom: 0;
+            }
         }
         .footer__top-menu {
             display: grid;
@@ -386,12 +384,10 @@
             margin-top: 45px;
             margin-bottom: 60px;
         }
-        
     }
-
 }
 @media screen and (max-width: 768px) {
-    header {    
+    header {
         .cap {
             height: 742px;
             overflow: hidden;
@@ -415,7 +411,7 @@
                         overflow: hidden;
                         &--header {
                             display: flex;
-                            align-items : center;
+                            align-items: center;
                             margin-right: 80px;
                             margin-top: 30px;
                             a {
@@ -426,7 +422,7 @@
                                 img {
                                     width: 286px;
                                     height: 48px;
-                                }                                
+                                }
                             }
                             button {
                                 display: block;
@@ -435,14 +431,13 @@
                                 margin-left: 86px;
                                 img {
                                     width: 78px;
-                                    height: 78px; 
+                                    height: 78px;
                                 }
                             }
-
                         }
                         &--navigation {
                             display: none;
-                            position: fixed;                            
+                            position: fixed;
                             top: 0;
                             left: 0;
                             width: 100vw;
@@ -456,7 +451,7 @@
                                 li {
                                     display: grid;
                                     list-style-type: none;
-                                    justify-content: center;                                
+                                    justify-content: center;
                                     a {
                                         text-decoration: none;
                                         color: white;
@@ -476,7 +471,6 @@
                                 height: 85px;
                             }
                         }
-                        
                     }
                 }
                 .middle-menu {
@@ -517,7 +511,6 @@
             }
         }
         .scheme-block {
-            
         }
     }
     .description-block {
@@ -528,8 +521,6 @@
                 font-size: 36px;
                 font-weight: 700;
                 line-height: 43.88px;
-
-
             }
             .second-text {
                 font-family: Montserrat;
@@ -537,7 +528,7 @@
                 font-weight: 400;
                 line-height: 24.38px;
                 text-align: center;
-                text-align: center;                
+                text-align: center;
             }
             .description-block__menu-card {
                 display: flex;
@@ -575,18 +566,13 @@
         .price-block__card {
             width: auto;
             .price-block__card-unit-top {
-                
-
             }
             .thin-text {
-                              
             }
             .price-block__card-unit-middle {
                 margin-top: 0;
                 ul {
                     li {
-                        
-
                     }
                 }
             }
@@ -594,7 +580,6 @@
                 margin-top: 0;
                 h1 {
                     text-align: center;
-
                 }
             }
         }
@@ -606,16 +591,15 @@
             margin-right: auto;
             width: 84vw;
             .main-text {
-                
             }
             .portfolio-block__slaid-menu {
                 .slaid-card {
                     width: 84vw;
                     margin-left: auto;
                     margin-right: auto;
-                .slaid-card__wrapper-elem {
-                    width: auto;
-                }
+                    .slaid-card__wrapper-elem {
+                        width: auto;
+                    }
                 }
             }
             .portfolio-block__arrow-menu {
@@ -628,7 +612,7 @@
                         text-align: left;
                     }
                     .thin-text {
-                        font-family: Montserrat;                        
+                        font-family: Montserrat;
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 24.38px;
@@ -654,11 +638,9 @@
         .wrapper {
             .contacts-block__feedback-menu {
                 .contacts-block__left-block {
-
                 }
                 .contacts-block__right-block {
                     .contacts-block__image-wrapper {
-
                     }
                     .contacts-block__text-wrapper {
                         margin-left: 60px;
@@ -668,15 +650,14 @@
             }
         }
     }
-    
 }
 @media screen and (max-width: 480px) {
     header {
         .cap {
             height: 683px;
             .cap__wrapper {
-                .top-menu {          
-                    width: 480px    ;          
+                .top-menu {
+                    width: 480px;
                     &__contacts {
                         margin-left: 52px;
                     }
@@ -685,26 +666,24 @@
                     }
                     &__popup {
                         &--header {
-
                             a {
                                 margin-left: 50px;
-                                width: 200px;                                
+                                width: 200px;
                                 font-size: 40px;
                                 text-align: center;
-                                img {                                    
+                                img {
                                     height: 48px;
                                     width: 200px;
-                                }                                
+                                }
                             }
                             button {
                                 margin-left: 5px;
                                 align-content: center;
                                 img {
                                     width: 36px;
-                                    height: 36px; 
+                                    height: 36px;
                                 }
                             }
-
                         }
                         &--contacts {
                             display: flex;
@@ -717,9 +696,7 @@
                                 height: 85px;
                             }
                         }
-                        
                     }
-                
                 }
                 .middle-menu {
                     &__left {
@@ -752,11 +729,10 @@
                         }
                     }
                 }
-
             }
         }
     }
-    
+
     main {
         .scheme-block {
             padding-bottom: 50px;
@@ -765,14 +741,13 @@
                 margin-left: auto;
                 margin-right: auto;
                 .table {
-
                     .table__text {
                         font-family: Montserrat;
                         font-size: 28.77px;
                         font-weight: 700;
                         line-height: 35.07px;
                         text-align: left;
-                        margin-top: 45px;                        
+                        margin-top: 45px;
                     }
                     .table__wrapper {
                         .table__left {
@@ -798,7 +773,6 @@
                     }
                 }
             }
-            
         }
         .portfolio-block {
             .wrapper {
@@ -816,7 +790,7 @@
                     .slaid-card__wrapper-elem {
                         .unit {
                             width: 100%;
-                            .slaid-card__text{
+                            .slaid-card__text {
                                 font-family: Montserrat;
                                 font-size: 24px;
                                 font-weight: 700;
@@ -828,7 +802,7 @@
                                 font-size: 16px;
                                 font-weight: 400;
                                 line-height: 19.5px;
-                                text-align: left;                                
+                                text-align: left;
                             }
                         }
                         .circle {
@@ -844,7 +818,6 @@
                         }
                     }
                     #leftArrow {
-                        
                     }
                 }
             }
@@ -870,17 +843,16 @@
                     .contacts-block__text-wrapper {
                         margin-top: 17px;
                         margin-left: 32px !important;
-                        margin-right: 32px !important;         
+                        margin-right: 32px !important;
                         .contacts-block__contact-wrapper {
                             display: flex;
                             flex-wrap: wrap;
                             gap: 11px;
                             justify-content: center;
-                            
                         }
                         .telegram-button {
-                                margin-top: 17px !important;
-                            }
+                            margin-top: 17px !important;
+                        }
                     }
                 }
             }
@@ -923,10 +895,6 @@
             }
         }
     }
-    
-
-
-
 }
 @media screen and (max-width: 320px) {
     header {
@@ -938,7 +906,6 @@
                     }
                     &__logotype {
                         margin-left: 20px;
-                        
                     }
                     &__contacts {
                         display: none;
@@ -975,7 +942,7 @@
                             width: 303px;
                             height: 313x;
                             margin-left: -60px;
-                            margin-top: 180px
+                            margin-top: 180px;
                         }
                     }
                 }
@@ -990,7 +957,6 @@
                 margin-left: auto;
                 margin-right: auto;
                 .table {
-
                     .table__text {
                         font-family: Montserrat;
                         font-size: 21.05px;
@@ -1026,13 +992,12 @@
                                 font-weight: 400;
                                 line-height: 17.07px;
                                 text-align: left;
-                                margin-top: 5px;                            
+                                margin-top: 5px;
                             }
                         }
                     }
                 }
             }
-            
         }
         .description-block {
             padding-top: 31px;
@@ -1042,7 +1007,7 @@
                     font-size: 24px;
                     font-weight: 700;
                     line-height: 29.26px;
-                    text-align: left;            
+                    text-align: left;
                 }
                 .second-text {
                     margin-top: 21px;
@@ -1050,14 +1015,13 @@
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 19.5px;
-                    text-align: center;                                      
+                    text-align: center;
                 }
                 .description-block__menu-card {
                     margin-top: 51px;
                     padding-bottom: 50px;
                     .card {
                         h1 {
-
                         }
                         h2 {
                             margin-top: 0;
@@ -1114,7 +1078,7 @@
                                 font-size: 17.06px;
                                 font-weight: 500;
                                 line-height: 20.8px;
-                                text-align: center;                                
+                                text-align: center;
                             }
                         }
                     }
@@ -1128,7 +1092,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 .main-text {
-                    text-align: center;                    
+                    text-align: center;
                 }
                 .portfolio-block__slaid-menu {
                     .slaid-card {
@@ -1149,12 +1113,12 @@
                         .unit {
                             width: 100%;
                             height: auto;
-                            .slaid-card__text{                                
+                            .slaid-card__text {
                                 font-family: Montserrat;
                                 font-size: 24px;
                                 font-weight: 700;
                                 line-height: 29.26px;
-                                text-align: center;                                
+                                text-align: center;
                             }
                             .thin-text {
                                 font-family: Montserrat;
@@ -1163,7 +1127,7 @@
                                 line-height: 17.07px;
                                 text-align: left;
                                 margin-left: 20px;
-                                margin-right: 20px;                                                          
+                                margin-right: 20px;
                             }
                         }
                         .circle {
@@ -1228,7 +1192,6 @@
                                 font-weight: 400;
                                 line-height: 18.29px;
                                 text-align: left;
-
                             }
                         }
                     }
@@ -1249,9 +1212,9 @@
                     }
                     .contacts-block__text-wrapper {
                         margin-top: 17px;
-                        margin-left: 10px !important;   
-                        margin-right: 10px !important; 
-                          
+                        margin-left: 10px !important;
+                        margin-right: 10px !important;
+
                         .contacts-block__contact-wrapper {
                             display: flex;
                             flex-wrap: wrap;
@@ -1309,12 +1272,12 @@
                     div:nth-child(1) {
                         order: 2;
                     }
-                    
+
                     div:nth-child(2) {
                         order: 3;
                     }
                 }
-                
+
                 hr {
                     margin-top: 25px;
                 }
