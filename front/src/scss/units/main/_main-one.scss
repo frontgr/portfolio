@@ -86,19 +86,19 @@
 }
 .main {
     width: 100%;
+    overflow-x: hidden;
 }
 .wrapper {
     width: 75%;
     margin: 0 auto;
 }
 
+@import "../../component/sheme-block-main";
 
-@import '../../component/sheme-block-main';
+@import "../../component/description-block-main";
 
-@import '../../component/description-block-main';
+@import "../../component/price-block-main";
 
-@import '../../component/price-block-main';
+@import "../../component/portfolio-block-main.scss";
 
-@import '../../component/portfolio-block-main.scss';
-
-@import '../../component/contacts-block-main';
+@import "../../component/contacts-block-main";
