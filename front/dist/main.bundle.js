@@ -4,7 +4,6 @@
 /***/ 333:
 /***/ (() => {
 
-
 var menu_navigation = $("#popup--navigation");
 
 $("#popup--button").on("click", function (e) { 
@@ -258,6 +257,7 @@ function updateMaskOnPhone(countryNumber) {
     document.getElementById("phoneNumber").placeholder = `+${COUNTRY[countryNumber]}(___)___-__-__`;
 }
 ;// CONCATENATED MODULE: ./src/scripts/index.js
+
 
 
 

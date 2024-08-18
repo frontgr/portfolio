@@ -2,120 +2,133 @@
 
 .top-menu__popup--button {
     display: none;
+    img {
+        cursor: pointer;
+    }
+    &:hover {
+        transform: scale(1.04);
+    }
 }
 .top-menu__popup {
     display: none;
+    img {
+        cursor: pointer;
+    }
 }
 
-.cap{
-    color:#FFFFFF;
-    background: linear-gradient(108.16deg, #1D1D1B 47.87%, #61187B 100%);
+.cap {
+    color: #ffffff;
+    background: linear-gradient(108.16deg, #1d1d1b 47.87%, #61187b 100%);
     width: 100%;
     height: 100vh;
-    .cap__wrapper{
+    .cap__wrapper {
         width: 75%;
         height: 100%;
         margin: 0 auto;
-        .top-menu{
+        .top-menu {
             padding: 20px 0 20px 0;
-            background-color: #1A1A1A;
+            background-color: #1a1a1a;
             position: fixed;
             left: 0;
             width: 100%;
             z-index: 10;
-            &__wrapper{
+            &__wrapper {
                 width: 75%;
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
-            &__logotype{
+            &__logotype {
                 width: 130px;
                 height: 24px;
-                
             }
-            &__navigation{
-                ul{
+            &__navigation {
+                ul {
                     display: flex;
                     gap: 35px;
                     list-style-type: none;
-                    li{
+                    li {
                         // transition: 0.2s;
                         font-size: 10px;
                         font-weight: 300;
                     }
                 }
-                a{
-                    color: #FFFFFF;
+                a {
+                    color: #ffffff;
                     font-size: 17px;
                     text-decoration: none;
-                    @include ColorHover(0.2s, 'col' , $light-blue , pointer)
+                    @include ColorHover(0.2s, "col", $light-blue, pointer);
                 }
             }
-            &__contacts{
+            &__contacts {
                 display: flex;
                 gap: 10px;
-                img{
-                    @include ColorHover(0.2s, 'bgcol' , #ffffff00 , pointer)
-                }                   
-                img:hover { 
-                    transform: scale(1.20); 
+                img {
+                    @include ColorHover(0.2s, "bgcol", #ffffff00, pointer);
+                }
+                img:hover {
+                    transform: scale(1.2);
                 }
             }
         }
-        .middle-menu{
+        .middle-menu {
             display: flex;
             height: 80%;
             padding-top: 70px;
-            &__left{
+            &__left {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 width: 55%;
                 // height: 100%;
                 padding-top: 155px;
-                h1{
+                h1 {
                     font-size: 45px;
                     line-height: 50px;
                     letter-spacing: 1px;
-                    img{
+                    img {
                         padding-left: 35px;
                         vertical-align: middle;
                         width: 75px;
                         height: 45px;
                     }
                 }
-                p{
+                p {
                     width: 580px;
                     font-size: 23px;
                     line-height: 30px;
                     font-weight: 300;
                 }
             }
-            &__right{
+            &__right {
                 width: 45%;
-                img{
+                img {
                     height: 552px;
                     width: 533px;
                     margin-top: 60px;
                     margin-left: 20px;
                 }
             }
-            &__main-button{
+            &__main-button {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
                 background: $light-blue;
                 height: 75px;
                 width: 300px;
                 border-radius: 84px;
-                color: #FFFFFF;
+                color: #ffffff;
                 font-size: 24px;
                 font-weight: 600;
                 border: none;
-                @include shadowHover(0.2s , $light-blue , 0px 4px 15px 0px , pointer )
+                @include shadowHover(
+                    0.2s,
+                    $light-blue,
+                    0px 4px 15px 0px,
+                    pointer
+                );
             }
         }
     }
