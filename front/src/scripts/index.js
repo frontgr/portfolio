@@ -9,7 +9,15 @@ import { select, selectTypeOfSite } from "./selectDropdown";
 document.getElementById("formContacts").addEventListener("submit", function(event) {
     event.preventDefault();
     if (validate()) {
-        console.log(jsonBuild());
+        // console.log(jsonBuild());
+        fetch('http://localhost:8000/notify', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'  
+            },
+            body: JSON.stringify(jsonBuild())
+        }).then(response=>console.log(response))
+        
         document.getElementById('formContacts').reset()
     }
 });

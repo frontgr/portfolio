@@ -62,7 +62,6 @@ $(document).on("click", ".popup-anchor-link", function (e) {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
@@ -269,6 +268,15 @@ document.getElementById("formContacts").addEventListener("submit", function(even
     event.preventDefault();
     if (validate()) {
         console.log(jsonBuild());
+        fetch('http://localhost:8000/notify', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'  
+            },
+            body: JSON.stringify(jsonBuild())
+        }).then(response=>console.log(response))
+        console.log(123);
+        
         document.getElementById('formContacts').reset()
     }
 });
