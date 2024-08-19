@@ -682,6 +682,15 @@
     header .cap .cap__wrapper .middle-menu__left h1 {
         width: 80%;
     }
+    .scheme-block img {
+        height: 642px;
+    }
+    .thin-text {
+        font-size: 16px;
+    }
+    .scheme-block__roadmap .table__left {
+        padding-top: 5px;
+    }
 }
 @media screen and (max-width: 480px) {
     .cap .cap__wrapper .middle-menu__main-button {
