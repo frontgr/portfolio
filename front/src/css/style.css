@@ -486,6 +486,7 @@ html {
 }
 
 .contacts-block {
+  scroll-margin-top: 50px;
   margin-bottom: 40px;
 }
 .contacts-block__feedback-menu {
@@ -792,9 +793,6 @@ html {
 @media screen and (max-width: 1440px) {
   header .cap .cap__wrapper {
     width: 83.3% !important;
-  }
-  header .cap .cap__wrapper .top-menu .top-menu__wrapper {
-    overflow: hidden;
   }
   .wrapper {
     margin-right: auto;
@@ -1349,9 +1347,31 @@ html {
     margin-right: 60px;
   }
 }
+@media screen and (max-width: 683px) {
+  .cap .cap__wrapper .middle-menu__left h1 img {
+    padding-left: 12px;
+  }
+  header .cap .cap__wrapper .middle-menu__left h1 {
+    font-size: 37px;
+  }
+  header .cap .cap__wrapper .middle-menu__left p {
+    width: 80%;
+  }
+  header .cap .cap__wrapper .middle-menu__right img {
+    margin-top: 179px;
+  }
+}
+@media screen and (max-width: 558px) {
+  header .cap .cap__wrapper .middle-menu__left h1 {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 480px) {
+  .cap .cap__wrapper .middle-menu__main-button {
+    width: 260px;
+  }
   header .cap {
-    height: 683px;
+    height: 599px;
   }
   header .cap .cap__wrapper .top-menu__contacts {
     display: none;
@@ -1398,14 +1418,14 @@ html {
   header .cap .cap__wrapper .middle-menu__left {
     width: 368px;
     font-size: 42px;
-    margin-top: 21px;
+    margin-top: 40px;
     padding: 0;
     gap: 27.52px;
   }
   header .cap .cap__wrapper .middle-menu__left h1 img {
     position: absolute;
-    left: 325px;
-    top: 153px;
+    left: 155px;
+    top: 270px;
     width: 60px;
     height: 34px;
   }
@@ -1562,6 +1582,11 @@ html {
     padding-bottom: 31px;
   }
 }
+@media screen and (max-width: 407px) {
+  header .cap .cap__wrapper .middle-menu__left p {
+    width: 327px;
+  }
+}
 @media screen and (max-width: 320px) {
   header .cap .cap__wrapper .top-menu__wrapper {
     margin-left: 0;
@@ -1584,9 +1609,9 @@ html {
     line-height: 35px;
   }
   header .cap .cap__wrapper .middle-menu__left h1 img {
-    left: 220px;
+    left: 120px;
     width: 45px;
-    top: 130px;
+    top: 217px;
   }
   header .cap .cap__wrapper .middle-menu__left p {
     font-size: 15px;

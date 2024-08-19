@@ -394,108 +394,106 @@
     header .cap .cap__wrapper .top-menu__navigation {
         display: none;
     }
-    header 
-        .cap {
-            height: 742px;
-            overflow: hidden;
-            .cap__wrapper {
-                .top-menu {
-                    &__popup {
-                        overflow: hidden;
-                        &--header {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            margin-top: 30px;
-                            gap: 10px;
-                            a {
+    header .cap {
+        height: 742px;
+        overflow: hidden;
+        .cap__wrapper {
+            .top-menu {
+                &__popup {
+                    overflow: hidden;
+                    &--header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 30px;
+                        gap: 10px;
+                        a {
+                            width: 286px;
+                            font-size: 40px;
+                            text-align: center;
+                            img {
                                 width: 286px;
-                                font-size: 40px;
-                                text-align: center;
-                                img {
-                                    width: 286px;
-                                    height: 48px;
-                                }
-                            }
-                            button {
-                                display: block;
-                                background: none;
-                                border: none;
-                                transition: 0.2s;
-                                img {
-                                    width: 36px;
-                                    height: 36px;
-                                }
+                                height: 48px;
                             }
                         }
-                        &--navigation {
-                            display: none;
-                            position: fixed;
-                            top: 0;
-                            left: 0;
-                            width: 100vw;
-                            height: 100vh;
-                            z-index: 200;
-                            background-color: rgb(25, 25, 25);
-                            ul {
+                        button {
+                            display: block;
+                            background: none;
+                            border: none;
+                            transition: 0.2s;
+                            img {
+                                width: 36px;
+                                height: 36px;
+                            }
+                        }
+                    }
+                    &--navigation {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100vw;
+                        height: 100vh;
+                        z-index: 200;
+                        background-color: rgb(25, 25, 25);
+                        ul {
+                            display: grid;
+                            gap: 11px;
+                            margin-top: 60px;
+                            li {
                                 display: grid;
-                                gap: 11px;
-                                margin-top: 60px;
-                                li {
-                                    display: grid;
-                                    list-style-type: none;
-                                    justify-content: center;
-                                    a {
-                                        text-decoration: none;
-                                        color: white;
-                                        text-align: center;
-                                        font-size: 40.55px;
-                                        transition: 0.2s;
-                                        &:hover {
-                                            color: #2cdef5;
-                                        }
+                                list-style-type: none;
+                                justify-content: center;
+                                a {
+                                    text-decoration: none;
+                                    color: white;
+                                    text-align: center;
+                                    font-size: 40.55px;
+                                    transition: 0.2s;
+                                    &:hover {
+                                        color: #2cdef5;
                                     }
                                 }
                             }
                         }
-                        &--contacts {
-                            display: flex;
-                            justify-content: center;
-                            justify-content: center;
-                            gap: 9px;
-                            margin-top: 80px;
-                            img {
-                                width: 65px;
-                                height: 65px;
-                                transition: 0.2s;
-                                &:hover {
-                                    transform: scale(1.1);
-                                }
+                    }
+                    &--contacts {
+                        display: flex;
+                        justify-content: center;
+                        justify-content: center;
+                        gap: 9px;
+                        margin-top: 80px;
+                        img {
+                            width: 65px;
+                            height: 65px;
+                            transition: 0.2s;
+                            &:hover {
+                                transform: scale(1.1);
                             }
                         }
                     }
                 }
-                .middle-menu {
-                    &__left {
-                        margin-top: 58px;
-                        padding: 0;
-                        h1 {
-                            font-size: 46px;
-                            line-height: 50px;
-                        }
-                        p {
-                            font-size: 24px;
-                            line-height: 33px;
-                        }
+            }
+            .middle-menu {
+                &__left {
+                    margin-top: 58px;
+                    padding: 0;
+                    h1 {
+                        font-size: 46px;
+                        line-height: 50px;
                     }
-                    &__right {
-                        margin-left: -300px;
-                        margin-top: 200px;
-                        img {
-                            margin-left: 0;
-                            width: 482px;
-                            height: 482px;
-                        }
+                    p {
+                        font-size: 24px;
+                        line-height: 33px;
+                    }
+                }
+                &__right {
+                    margin-left: -300px;
+                    margin-top: 200px;
+                    img {
+                        margin-left: 0;
+                        width: 482px;
+                        height: 482px;
                     }
                 }
             }
@@ -666,10 +664,32 @@
         }
     }
 }
+@media screen and (max-width: 683px) {
+    .cap .cap__wrapper .middle-menu__left h1 img {
+        padding-left: 12px;
+    }
+    header .cap .cap__wrapper .middle-menu__left h1 {
+        font-size: 37px;
+    }
+    header .cap .cap__wrapper .middle-menu__left p {
+        width: 80%;
+    }
+    header .cap .cap__wrapper .middle-menu__right img {
+        margin-top: 179px;
+    }
+}
+@media screen and (max-width: 558px) {
+    header .cap .cap__wrapper .middle-menu__left h1 {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 480px) {
+    .cap .cap__wrapper .middle-menu__main-button {
+        width: 260px;
+    }
     header {
         .cap {
-            height: 683px;
+            height: 599px;
             .cap__wrapper {
                 .top-menu {
                     &__contacts {
@@ -719,14 +739,14 @@
                     &__left {
                         width: 368px;
                         font-size: 42px;
-                        margin-top: 21px;
+                        margin-top: 40px;
                         padding: 0;
                         gap: 27.52px;
                         h1 {
                             img {
                                 position: absolute;
-                                left: 325px;
-                                top: 153px;
+                                left: 155px;
+                                top: 270px;
                                 width: 60px;
                                 height: 34px;
                             }
@@ -913,6 +933,11 @@
         }
     }
 }
+@media screen and (max-width: 407px) {
+    header .cap .cap__wrapper .middle-menu__left p {
+        width: 327px;
+    }
+}
 @media screen and (max-width: 320px) {
     header {
         .cap {
@@ -939,9 +964,9 @@
                             font-size: 31px;
                             line-height: 35px;
                             img {
-                                left: 220px;
+                                left: 120px;
                                 width: 45px;
-                                top: 130px;
+                                top: 217px;
                             }
                         }
                         p {
