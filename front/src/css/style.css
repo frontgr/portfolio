@@ -390,6 +390,9 @@ html {
 .price-block__card-unit-bottom {
   padding-top: 20px;
 }
+.price-block__card-unit-bottom h1 {
+  text-align: center;
+}
 .price-block .list {
   margin-top: 30px;
   list-style-type: none;
@@ -841,6 +844,21 @@ html {
   .description-block .card__text {
     font-size: 28px;
   }
+  .price-block__card {
+    gap: 20px;
+  }
+  .price-block .list li {
+    font-size: 16px;
+  }
+  .price-block__card-unit-middle {
+    height: 200px;
+  }
+  .price-block__card-unit-bottom {
+    padding-top: 40px;
+  }
+  .price-block__card-unit-bottom h1 {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 1163px) {
   .cap .cap__wrapper .top-menu__wrapper {
@@ -856,6 +874,12 @@ html {
   }
 }
 @media screen and (max-width: 1024px) {
+  .price-block__card {
+    gap: 0px;
+  }
+  .price-block__card-unit-middle {
+    margin-top: 0px;
+  }
   .description-block .card {
     align-items: center;
   }
@@ -983,14 +1007,15 @@ html {
     line-height: 19.5px;
     text-align: center;
     font-size: 16px;
-    padding: 0 52px;
+    padding: 0 12px;
     margin-top: 20px;
   }
   .price-block__card-unit-middle {
-    padding-left: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
     margin-bottom: 0;
-    margin-top: 18px;
   }
   .price-block__card-unit-middle .list .list__element {
     font-family: Montserrat;
@@ -1249,6 +1274,9 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
+  .price-block .price-block__card .price-block__card-unit-bottom {
+    margin-top: 20px;
+  }
   main .scheme-block {
     width: 85vw;
     margin-left: auto;
@@ -1596,6 +1624,18 @@ html {
   }
 }
 @media screen and (max-width: 407px) {
+  .price-block__card-unit-top h2 {
+    font-size: 22px;
+  }
+  .price-block .wrapper {
+    overflow: visible;
+  }
+  .price-block__card-unit-bottom a {
+    width: 180px;
+  }
+  .price-block__card-unit-top {
+    height: 130px;
+  }
   header .cap .cap__wrapper .middle-menu__left p {
     width: 327px;
   }

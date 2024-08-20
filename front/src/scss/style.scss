@@ -25,6 +25,8 @@ html {
     overflow-x: hidden;
 }
 
+@import "mixin&variable/variable";
+
 @import "./units/header/header";
 @import "./units/main/main-one";
 @import "./units/footer/footer";
@@ -32,5 +34,3 @@ html {
 
 @import "./component/popup";
 @import "./component/dropdown-menu";
-
-@import "mixin&variable/variable";
