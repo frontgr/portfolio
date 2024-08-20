@@ -1,33 +1,14 @@
 // Пример того, как нужно делать медиа запросы без дублирования стилей
 @media screen and (max-width: 1600px) {
-    .description-block .wrapper {
-        overflow: visible;
+    .cap .cap__wrapper .middle-menu__main-button {
+        z-index: 1;
     }
     .portfolio-block {
-        width: 100vw;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        padding-top: 45px;
-        padding-bottom: 34px;
-        height: auto;
-        .wrapper {
-            width: 75vw;
-            margin-left: auto;
-            margin-right: auto;
-            overflow: hidden;
-        }
-        &__slaid-menu {
-            display: inline-flex;
-            gap: 30px;
-        }
-        .slaid-card {
-            width: 585px;
-            height: 420px;
-        }
-        .FirstCard {
-            order: 2;
-        }
+        padding-top: 60px;
+        height: 600px;
+    }
+    .description-block .wrapper {
+        overflow: visible;
     }
 }
 @media screen and (max-width: 1440px) {
@@ -43,30 +24,6 @@
         overflow: hidden;
         width: 83.3vw;
         margin-left: auto;
-    }
-    .portfolio-block {
-        width: 100vw;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        padding-top: 45px;
-        padding-bottom: 34px;
-        height: auto;
-        .wrapper {
-            margin-left: 148px;
-            margin-right: auto;
-            overflow: hidden;
-            width: 83.3vw;
-            margin-left: auto;
-        }
-        &__slaid-menu {
-            display: inline-flex;
-            gap: 30px;
-        }
-        .slaid-card {
-            width: 585px;
-            height: 420px;
-        }
     }
     .FirstCard {
         order: 2;
@@ -111,6 +68,11 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .portfolio-block {
+        .wrapper {
+            width: 91vw;
+        }
+    }
     .price-block__card {
         gap: 0px;
     }
@@ -298,56 +260,6 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 19px;
-            }
-        }
-    }
-
-    .portfolio-block {
-        width: 100vw;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        padding-top: 45px;
-        padding-bottom: 34px;
-        height: auto;
-        .wrapper {
-            overflow: hidden;
-            margin: 0;
-            width: 71vw;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        &__slaid-menu {
-            display: inline-flex;
-            gap: 100px;
-        }
-        .slaid-card {
-            width: 727px;
-            height: 455px;
-            .slaid-card__img {
-                height: 311px;
-            }
-            &__text {
-                font-weight: 700;
-                font-size: 24px;
-                text-align: left;
-                line-height: 29.26px;
-            }
-            .thin-text {
-                font-weight: 400;
-                font-size: 20px;
-                text-align: left;
-                line-height: 24.38px;
-            }
-            &__wrapper-elem {
-                padding-top: 0;
-                margin-top: 29px;
-            }
-        }
-        &__arrow-menu {
-            margin-top: 18px;
-            #rightArrow {
-                margin-right: 35px;
             }
         }
     }
@@ -540,7 +452,30 @@
         margin-right: 10px;
     }
 }
+@media screen and (max-width: 888px) {
+    .portfolio-block {
+        height: max-content;
+        padding-bottom: 70px;
+    }
+    .portfolio-block__slaid-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-block .slaid-card {
+        width: 70%;
+    }
+    .main-text {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .portfolio-block {
+        padding-top: 40px;
+    }
+    .portfolio-block .slaid-card {
+        width: 90%;
+    }
     .price-block .price-block__card .price-block__card-unit-bottom {
         margin-top: 20px;
     }
@@ -554,8 +489,6 @@
             .wrapper {
                 width: auto;
             }
-        }
-        .scheme-block {
         }
     }
     .description-block {
@@ -605,16 +538,8 @@
         }
         .price-block__card {
             width: auto;
-            .price-block__card-unit-top {
-            }
-            .thin-text {
-            }
             .price-block__card-unit-middle {
                 margin-top: 0;
-                ul {
-                    li {
-                    }
-                }
             }
             .price-block__card-unit-bottom {
                 margin-top: 0;
@@ -625,63 +550,10 @@
         }
     }
 
-    .portfolio-block {
-        .wrapper {
-            margin-left: auto;
-            margin-right: auto;
-            width: 84vw;
-            .main-text {
-            }
-            .portfolio-block__slaid-menu {
-                .slaid-card {
-                    width: 84vw;
-                    margin-left: auto;
-                    margin-right: auto;
-                    .slaid-card__wrapper-elem {
-                        width: auto;
-                    }
-                }
-            }
-            .portfolio-block__arrow-menu {
-                .unit {
-                    .slaid-card__text {
-                        font-family: Montserrat;
-                        font-size: 24px;
-                        font-weight: 700;
-                        line-height: 29.26px;
-                        text-align: left;
-                    }
-                    .thin-text {
-                        font-family: Montserrat;
-                        font-size: 20px;
-                        font-weight: 400;
-                        line-height: 24.38px;
-                        text-align: left;
-                    }
-                }
-            }
-            .portfolio-block__arrow-menu {
-                div {
-                    #rightArrow {
-                        margin-right: 0;
-                        margin-left: 22px;
-                    }
-                    button {
-                        width: 50px;
-                        height: 50px;
-                    }
-                }
-            }
-        }
-    }
     .contacts-block {
         .wrapper {
             .contacts-block__feedback-menu {
-                .contacts-block__left-block {
-                }
                 .contacts-block__right-block {
-                    .contacts-block__image-wrapper {
-                    }
                     .contacts-block__text-wrapper {
                         margin-left: 60px;
                         margin-right: 60px;
@@ -843,54 +715,6 @@
                                 text-align: left;
                             }
                         }
-                    }
-                }
-            }
-        }
-        .portfolio-block {
-            .wrapper {
-                width: 80vw;
-                margin-left: auto;
-                margin-right: auto;
-                .portfolio-block__slaid-menu {
-                    .slaid-card {
-                        height: auto;
-                        width: 385px;
-                        img {
-                            height: auto;
-                        }
-                    }
-                    .slaid-card__wrapper-elem {
-                        .unit {
-                            width: 100%;
-                            .slaid-card__text {
-                                font-family: Montserrat;
-                                font-size: 24px;
-                                font-weight: 700;
-                                line-height: 29.26px;
-                                text-align: left;
-                            }
-                            .thin-text {
-                                font-family: Montserrat;
-                                font-size: 16px;
-                                font-weight: 400;
-                                line-height: 19.5px;
-                                text-align: left;
-                            }
-                        }
-                        .circle {
-                            display: none;
-                        }
-                    }
-                }
-                .portfolio-block__arrow-menu {
-                    #rightArrow {
-                        margin-left: 22px;
-                        img {
-                            margin-right: 0;
-                        }
-                    }
-                    #leftArrow {
                     }
                 }
             }
@@ -1111,8 +935,6 @@
                     margin-top: 51px;
                     padding-bottom: 50px;
                     .card {
-                        h1 {
-                        }
                         h2 {
                             margin-top: 0;
                         }
@@ -1170,73 +992,6 @@
                                 line-height: 20.8px;
                                 text-align: center;
                             }
-                        }
-                    }
-                }
-            }
-        }
-
-        .portfolio-block {
-            .wrapper {
-                width: 87.5vw;
-                margin-left: auto;
-                margin-right: auto;
-                .main-text {
-                    text-align: center;
-                }
-                .portfolio-block__slaid-menu {
-                    .slaid-card {
-                        height: 314px;
-                        width: 280px;
-                        overflow: hidden;
-                        text-align: left;
-                        img {
-                            height: 185px;
-                            width: 378px;
-                            position: relative;
-                            left: -90px;
-                        }
-                    }
-                    .slaid-card__wrapper-elem {
-                        justify-content: center;
-                        padding: 0;
-                        .unit {
-                            width: 100%;
-                            height: auto;
-                            .slaid-card__text {
-                                font-family: Montserrat;
-                                font-size: 24px;
-                                font-weight: 700;
-                                line-height: 29.26px;
-                                text-align: center;
-                            }
-                            .thin-text {
-                                font-family: Montserrat;
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 17.07px;
-                                text-align: left;
-                                margin-left: 20px;
-                                margin-right: 20px;
-                            }
-                        }
-                        .circle {
-                            display: none;
-                        }
-                    }
-                }
-                .portfolio-block__arrow-menu {
-                    #rightArrow {
-                        img {
-                            width: 50px;
-                            height: 50px;
-                            margin-left: 0;
-                        }
-                    }
-                    #leftArrow {
-                        img {
-                            width: 50px;
-                            height: 50px;
                         }
                     }
                 }

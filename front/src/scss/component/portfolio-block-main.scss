@@ -46,6 +46,12 @@
             padding: 20px;
             padding-bottom: 30px;
             margin-top: 20px;
+            & .circle {
+                transition: all 0.2s;
+                &:hover {
+                    background-color: $light-blue;
+                }
+            }
             img {
                 width: 40px;
                 margin: 9px;

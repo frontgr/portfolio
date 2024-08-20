@@ -23,6 +23,7 @@ textarea {
 
 html {
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @import "mixin&variable/variable";
