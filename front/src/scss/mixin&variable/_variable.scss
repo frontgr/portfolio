@@ -1,30 +1,30 @@
-@mixin shadowHover($time , $color , $px , $cursor) {
-    &{
+@mixin shadowHover($time, $color, $px, $cursor) {
+    & {
         transition: $time;
     }
-    &:hover{
+    &:hover {
         cursor: $cursor;
         box-shadow: $px $color;
     }
 }
-@mixin ColorHover( $transition-time, $art , $color , $cursor) {
-    &{
+@mixin ColorHover($transition-time, $art, $color, $cursor) {
+    & {
         cursor: default;
         transition: $transition-time;
     }
-    &:hover{
-        @if $art == 'col' {
+    &:hover {
+        @if $art == "col" {
             cursor: $cursor;
-            color:  $color;
+            color: $color;
         }
-        @if $art == 'bgcol'{
+        @if $art == "bgcol" {
             cursor: $cursor;
             background-color: $color;
         }
     }
 }
-$dark-color:#1D1D1B;
-$gray-color:#575757;
-$light-blue: #2CDEF5;
-$gray-blue : #5288C1;
-$light-lime: #22D466;
+$dark-color: #1d1d1b;
+$gray-color: #575757;
+$light-blue: #2cdef5;
+$gray-blue: #5288c1;
+$light-lime: #22d466;

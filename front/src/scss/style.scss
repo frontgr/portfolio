@@ -23,7 +23,10 @@ textarea {
 
 html {
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
+
+@import "mixin&variable/variable";
 
 @import "./units/header/header";
 @import "./units/main/main-one";
@@ -32,5 +35,3 @@ html {
 
 @import "./component/popup";
 @import "./component/dropdown-menu";
-
-@import "mixin&variable/variable";

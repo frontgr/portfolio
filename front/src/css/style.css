@@ -22,6 +22,7 @@ textarea {
 
 html {
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .top-menu__popup--button {
@@ -91,7 +92,7 @@ html {
 }
 .cap .cap__wrapper .top-menu__navigation a:hover {
   cursor: pointer;
-  color: #2CDEF5;
+  color: #2cdef5;
 }
 .cap .cap__wrapper .top-menu__contacts {
   display: flex;
@@ -150,7 +151,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #2CDEF5;
+  background: #2cdef5;
   height: 75px;
   width: 300px;
   border-radius: 84px;
@@ -164,17 +165,17 @@ html {
 }
 .cap .cap__wrapper .middle-menu__main-button:hover {
   cursor: pointer;
-  box-shadow: 0px 4px 15px 0px #2CDEF5;
+  box-shadow: 0px 4px 15px 0px #2cdef5;
 }
 
 .black {
-  background: #1D1D1B;
+  background: #1d1d1b;
   color: white;
 }
 
 .white {
   background-color: white;
-  color: #1D1D1B;
+  color: #1d1d1b;
 }
 
 .circle {
@@ -254,7 +255,7 @@ html {
 }
 
 .toggle:checked::before {
-  background: #2CDEF5;
+  background: #2cdef5;
 }
 
 .toggle:checked:before {
@@ -329,6 +330,7 @@ html {
   width: 28%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
   white-space: wrap;
 }
@@ -364,7 +366,7 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  background-color: #1D1D1B;
+  background-color: #1d1d1b;
   border: none;
   border-radius: 90px;
   width: 100%;
@@ -378,7 +380,7 @@ html {
 }
 .price-block__btn-buy:hover {
   cursor: pointer;
-  box-shadow: #1D1D1B 0px 4px 15px 0px;
+  box-shadow: #1d1d1b 0px 4px 15px 0px;
 }
 .price-block__card-unit-top {
   height: 140px;
@@ -388,6 +390,9 @@ html {
 }
 .price-block__card-unit-bottom {
   padding-top: 20px;
+}
+.price-block__card-unit-bottom h1 {
+  text-align: center;
 }
 .price-block .list {
   margin-top: 30px;
@@ -403,13 +408,13 @@ html {
   content: url("../assets/decor/check.svg");
   margin-right: 15px;
   color: white;
-  color: #2CDEF5;
+  color: #2cdef5;
 }
 
 .portfolio-block {
   padding-top: 100px;
   height: 700px;
-  background: #1D1D1B;
+  background: #1d1d1b;
   color: white;
 }
 .portfolio-block__slaid-menu {
@@ -463,6 +468,12 @@ html {
   padding: 20px;
   padding-bottom: 30px;
   margin-top: 20px;
+}
+.portfolio-block .slaid-card__wrapper-elem .circle {
+  transition: all 0.2s;
+}
+.portfolio-block .slaid-card__wrapper-elem .circle:hover {
+  background-color: #2cdef5;
 }
 .portfolio-block .slaid-card__wrapper-elem img {
   width: 40px;
@@ -563,7 +574,7 @@ html {
   margin-top: 40px;
   width: 100%;
   height: 80px;
-  background-color: #5288C1;
+  background-color: #5288c1;
   border: none;
   color: #fff;
   font-size: 20px;
@@ -575,7 +586,7 @@ html {
 }
 .contacts-block .telegram-button:hover {
   cursor: pointer;
-  box-shadow: #5288C1 0px 4px 15px 0px;
+  box-shadow: #5288c1 0px 4px 15px 0px;
 }
 .contacts-block .whatsapp-button {
   display: flex;
@@ -584,7 +595,7 @@ html {
   margin-top: 20px;
   width: 100%;
   height: 80px;
-  background-color: #22D466;
+  background-color: #22d466;
   border: none;
   color: #fff;
   font-size: 20px;
@@ -596,7 +607,7 @@ html {
 }
 .contacts-block .whatsapp-button:hover {
   cursor: pointer;
-  box-shadow: #22D466 0px 4px 15px 0px;
+  box-shadow: #22d466 0px 4px 15px 0px;
 }
 .contacts-block .input-feedback {
   width: calc(100% - 45px);
@@ -677,7 +688,7 @@ html {
 .contacts-block .chek-box-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 97%;
 }
 .contacts-block .submit-button {
@@ -687,7 +698,7 @@ html {
   font-size: 20px;
   font-weight: 700;
   color: white;
-  background-color: #1D1D1B;
+  background-color: #1d1d1b;
   border: none;
 }
 .contacts-block .submit-button {
@@ -695,7 +706,7 @@ html {
 }
 .contacts-block .submit-button:hover {
   cursor: pointer;
-  box-shadow: #1D1D1B 0px 4px 15px 0px;
+  box-shadow: #1d1d1b 0px 4px 15px 0px;
 }
 
 .footer {
@@ -763,31 +774,15 @@ html {
 }
 
 @media screen and (max-width: 1600px) {
+  .cap .cap__wrapper .middle-menu__main-button {
+    z-index: 1;
+  }
   .portfolio-block {
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    padding-top: 45px;
-    padding-bottom: 34px;
-    height: auto;
+    padding-top: 60px;
+    height: 600px;
   }
-  .portfolio-block .wrapper {
-    width: 75vw;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-  }
-  .portfolio-block__slaid-menu {
-    display: inline-flex;
-    gap: 30px;
-  }
-  .portfolio-block .slaid-card {
-    width: 585px;
-    height: 420px;
-  }
-  .portfolio-block .FirstCard {
-    order: 2;
+  .description-block .wrapper {
+    overflow: visible;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -800,30 +795,6 @@ html {
     width: 83.3vw;
     margin-left: auto;
   }
-  .portfolio-block {
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    padding-top: 45px;
-    padding-bottom: 34px;
-    height: auto;
-  }
-  .portfolio-block .wrapper {
-    margin-left: 148px;
-    margin-right: auto;
-    overflow: hidden;
-    width: 83.3vw;
-    margin-left: auto;
-  }
-  .portfolio-block__slaid-menu {
-    display: inline-flex;
-    gap: 30px;
-  }
-  .portfolio-block .slaid-card {
-    width: 585px;
-    height: 420px;
-  }
   .FirstCard {
     order: 2;
   }
@@ -831,6 +802,26 @@ html {
 @media screen and (max-width: 1340px) {
   .cap .cap__wrapper .top-menu__navigation ul {
     gap: 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .description-block .card__text {
+    font-size: 28px;
+  }
+  .price-block__card {
+    gap: 20px;
+  }
+  .price-block .list li {
+    font-size: 16px;
+  }
+  .price-block__card-unit-middle {
+    height: 200px;
+  }
+  .price-block__card-unit-bottom {
+    padding-top: 40px;
+  }
+  .price-block__card-unit-bottom h1 {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 1163px) {
@@ -847,6 +838,18 @@ html {
   }
 }
 @media screen and (max-width: 1024px) {
+  .portfolio-block .wrapper {
+    width: 91vw;
+  }
+  .price-block__card {
+    gap: 0px;
+  }
+  .price-block__card-unit-middle {
+    margin-top: 0px;
+  }
+  .description-block .card {
+    align-items: center;
+  }
   header .cap {
     overflow-x: hidden;
   }
@@ -919,9 +922,6 @@ html {
     margin-top: 78px;
     padding-bottom: 65px;
   }
-  .description-block__menu-card .card img {
-    padding-left: 97px;
-  }
   .description-block__menu-card .card h1 {
     font-weight: 700;
     font-size: 24px;
@@ -974,14 +974,15 @@ html {
     line-height: 19.5px;
     text-align: center;
     font-size: 16px;
-    padding: 0 52px;
+    padding: 0 12px;
     margin-top: 20px;
   }
   .price-block__card-unit-middle {
-    padding-left: 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
     margin-bottom: 0;
-    margin-top: 18px;
   }
   .price-block__card-unit-middle .list .list__element {
     font-family: Montserrat;
@@ -1008,55 +1009,6 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-top: 19px;
-  }
-  .portfolio-block {
-    width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    padding-top: 45px;
-    padding-bottom: 34px;
-    height: auto;
-  }
-  .portfolio-block .wrapper {
-    overflow: hidden;
-    margin: 0;
-    width: 71vw;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .portfolio-block__slaid-menu {
-    display: inline-flex;
-    gap: 100px;
-  }
-  .portfolio-block .slaid-card {
-    width: 727px;
-    height: 455px;
-  }
-  .portfolio-block .slaid-card .slaid-card__img {
-    height: 311px;
-  }
-  .portfolio-block .slaid-card__text {
-    font-weight: 700;
-    font-size: 24px;
-    text-align: left;
-    line-height: 29.26px;
-  }
-  .portfolio-block .slaid-card .thin-text {
-    font-weight: 400;
-    font-size: 20px;
-    text-align: left;
-    line-height: 24.38px;
-  }
-  .portfolio-block .slaid-card__wrapper-elem {
-    padding-top: 0;
-    margin-top: 29px;
-  }
-  .portfolio-block__arrow-menu {
-    margin-top: 18px;
-  }
-  .portfolio-block__arrow-menu #rightArrow {
-    margin-right: 35px;
   }
   .contacts-block {
     width: 100vw;
@@ -1239,7 +1191,33 @@ html {
     margin-right: 10px;
   }
 }
+@media screen and (max-width: 888px) {
+  .portfolio-block {
+    height: -moz-max-content;
+    height: max-content;
+    padding-bottom: 70px;
+  }
+  .portfolio-block__slaid-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-block .slaid-card {
+    width: 70%;
+  }
+  .main-text {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
+  .portfolio-block {
+    padding-top: 40px;
+  }
+  .portfolio-block .slaid-card {
+    width: 90%;
+  }
+  .price-block .price-block__card .price-block__card-unit-bottom {
+    margin-top: 20px;
+  }
   main .scheme-block {
     width: 85vw;
     margin-left: auto;
@@ -1263,7 +1241,6 @@ html {
     font-weight: 400;
     line-height: 24.38px;
     text-align: center;
-    text-align: center;
   }
   .description-block .wrapper .description-block__menu-card {
     display: flex;
@@ -1277,18 +1254,14 @@ html {
     margin-right: auto;
   }
   .description-block .wrapper .description-block__menu-card .card .card__text {
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 700;
     line-height: 29.26px;
-    text-align: center;
   }
   .description-block .wrapper .description-block__menu-card .card .second-text {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
-    text-align: center;
   }
   .price-block__menu {
     display: grid;
@@ -1306,41 +1279,6 @@ html {
   }
   .price-block .price-block__card .price-block__card-unit-bottom h1 {
     text-align: center;
-  }
-  .portfolio-block .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 84vw;
-  }
-  .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card {
-    width: 84vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card .slaid-card__wrapper-elem {
-    width: auto;
-  }
-  .portfolio-block .wrapper .portfolio-block__arrow-menu .unit .slaid-card__text {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29.26px;
-    text-align: left;
-  }
-  .portfolio-block .wrapper .portfolio-block__arrow-menu .unit .thin-text {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.38px;
-    text-align: left;
-  }
-  .portfolio-block .wrapper .portfolio-block__arrow-menu div #rightArrow {
-    margin-right: 0;
-    margin-left: 22px;
-  }
-  .portfolio-block .wrapper .portfolio-block__arrow-menu div button {
-    width: 50px;
-    height: 50px;
   }
   .contacts-block .wrapper .contacts-block__feedback-menu .contacts-block__right-block .contacts-block__text-wrapper {
     margin-left: 60px;
@@ -1485,44 +1423,6 @@ html {
     line-height: 29.22px;
     text-align: left;
   }
-  main .portfolio-block .wrapper {
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card {
-    height: auto;
-    width: 385px;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card img {
-    height: auto;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit {
-    width: 100%;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit .slaid-card__text {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29.26px;
-    text-align: left;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit .thin-text {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.5px;
-    text-align: left;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .circle {
-    display: none;
-  }
-  main .portfolio-block .wrapper .portfolio-block__arrow-menu #rightArrow {
-    margin-left: 22px;
-  }
-  main .portfolio-block .wrapper .portfolio-block__arrow-menu #rightArrow img {
-    margin-right: 0;
-  }
   main .contacts-block {
     width: 100vw;
   }
@@ -1592,6 +1492,18 @@ html {
   }
 }
 @media screen and (max-width: 407px) {
+  .price-block__card-unit-top h2 {
+    font-size: 22px;
+  }
+  .price-block .wrapper {
+    overflow: visible;
+  }
+  .price-block__card-unit-bottom a {
+    width: 180px;
+  }
+  .price-block__card-unit-top {
+    height: 130px;
+  }
   header .cap .cap__wrapper .middle-menu__left p {
     width: 327px;
   }
@@ -1764,62 +1676,6 @@ html {
     font-weight: 500;
     line-height: 20.8px;
     text-align: center;
-  }
-  main .portfolio-block .wrapper {
-    width: 87.5vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  main .portfolio-block .wrapper .main-text {
-    text-align: center;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card {
-    height: 314px;
-    width: 280px;
-    overflow: hidden;
-    text-align: left;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card img {
-    height: 185px;
-    width: 378px;
-    position: relative;
-    left: -90px;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem {
-    justify-content: center;
-    padding: 0;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit {
-    width: 100%;
-    height: auto;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit .slaid-card__text {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29.26px;
-    text-align: center;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .unit .thin-text {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17.07px;
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  main .portfolio-block .wrapper .portfolio-block__slaid-menu .slaid-card__wrapper-elem .circle {
-    display: none;
-  }
-  main .portfolio-block .wrapper .portfolio-block__arrow-menu #rightArrow img {
-    width: 50px;
-    height: 50px;
-    margin-left: 0;
-  }
-  main .portfolio-block .wrapper .portfolio-block__arrow-menu #leftArrow img {
-    width: 50px;
-    height: 50px;
   }
   main .contacts-block {
     width: 100vw;
