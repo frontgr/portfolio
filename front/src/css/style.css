@@ -1595,6 +1595,11 @@ html {
   header .cap .cap__wrapper .middle-menu__left p {
     width: 327px;
   }
+  main .wrapper .contacts-block__feedback-menu .contacts-block__left-block {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 320px) {
   header .cap .cap__wrapper .top-menu__wrapper {
@@ -1884,6 +1889,7 @@ html {
     flex-wrap: wrap;
     gap: 11px;
     justify-content: center;
+    margin-bottom: 25px;
   }
   main .contacts-block .wrapper .contacts-block__right-block .contacts-block__text-wrapper .contacts-block__contact-wrapper a {
     text-align: left;
@@ -2122,4 +2128,4 @@ html {
 .phone-wrapper {
   border-radius: 90px;
   border: 1px solid #c8c8c8;
-}/*# sourceMappingURL=style.css.map */
+}

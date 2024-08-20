@@ -903,6 +903,7 @@
                 }
             }
         }
+        
     }
 
     footer {
@@ -945,6 +946,17 @@
 @media screen and (max-width: 407px) {
     header .cap .cap__wrapper .middle-menu__left p {
         width: 327px;
+    }
+    main {
+        .wrapper {
+            .contacts-block__feedback-menu {
+                .contacts-block__left-block {
+                    width: 80vw;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 320px) {
@@ -1271,6 +1283,7 @@
                             flex-wrap: wrap;
                             gap: 11px;
                             justify-content: center;
+                            margin-bottom: 25px;
                             a {
                                 text-align: left;
                                 font-size: 20px;
@@ -1284,7 +1297,7 @@
                     }
                 }
             }
-        }
+        }  
     }
     footer {
         .footer {
