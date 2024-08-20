@@ -1,5 +1,8 @@
 // Пример того, как нужно делать медиа запросы без дублирования стилей
 @media screen and (max-width: 1600px) {
+    .description-block .wrapper {
+        overflow: visible;
+    }
     .portfolio-block {
         width: 100vw;
         margin-left: auto;
@@ -74,6 +77,11 @@
         gap: 15px;
     }
 }
+@media screen and (max-width: 1200px) {
+    .description-block .card__text {
+        font-size: 28px;
+    }
+}
 @media screen and (max-width: 1163px) {
     .cap .cap__wrapper .top-menu__wrapper {
         width: 85%;
@@ -88,6 +96,9 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .description-block .card {
+        align-items: center;
+    }
     header {
         .cap {
             overflow-x: hidden;
@@ -175,9 +186,6 @@
             margin-top: 78px;
             padding-bottom: 65px;
             .card {
-                img {
-                    padding-left: 97px;
-                }
                 h1 {
                     font-weight: 700;
                     font-size: 24px;
@@ -510,7 +518,6 @@
         margin-right: 10px;
     }
 }
-
 @media screen and (max-width: 768px) {
     main {
         .scheme-block {
@@ -541,7 +548,6 @@
                 font-weight: 400;
                 line-height: 24.38px;
                 text-align: center;
-                text-align: center;
             }
             .description-block__menu-card {
                 display: flex;
@@ -553,18 +559,14 @@
                     margin-left: auto;
                     margin-right: auto;
                     .card__text {
-                        font-family: Montserrat;
                         font-size: 24px;
                         font-weight: 700;
                         line-height: 29.26px;
-                        text-align: center;
                     }
                     .second-text {
-                        font-family: Montserrat;
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 19.5px;
-                        text-align: center;
                     }
                 }
             }
