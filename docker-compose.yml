@@ -15,9 +15,6 @@ services:
     container_name: portfolio-app
     ports:
       - "8000:8000"
-    environment:
-      - BOT_TOKEN=7235828288:AAGx5T_n4nJLKa5aewXQNeFR-FgSvoorJ3U
-      - DB_URI=mongodb://root:root@mongo:27017
 
   bot: 
     build: ./back/bot
