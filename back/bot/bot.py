@@ -13,8 +13,8 @@ from keyboards import get_keyboard
 
 
 
-bot_token = os.get('BOT_TOKEN')
-admins = [os.get('ADMIN_I'), os.get('ADMIN_K'), os.get('ADMIN_E')]
+bot_token = os.getenv('BOT_TOKEN')
+admins = [os.getenv('ADMIN_I'), os.getenv('ADMIN_K'), os.getenv('ADMIN_E')]
 
 
 bot = Bot(token=bot_token)
