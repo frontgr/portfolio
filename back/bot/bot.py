@@ -1,5 +1,5 @@
 import asyncio
-from os import environ
+import os
 
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
@@ -13,8 +13,8 @@ from keyboards import get_keyboard
 
 
 
-bot_token = environ['BOT_TOKEN']
-admins = [environ['ADMIN_I'], environ['ADMIN_K'], environ['ADMIN_E']]
+bot_token = os.get('BOT_TOKEN')
+admins = [os.get('ADMIN_I'), os.get('ADMIN_K'), os.get('ADMIN_E')]
 
 
 bot = Bot(token=bot_token)

@@ -1,4 +1,4 @@
-from os import environ
+import os
 
 from pymongo import MongoClient
 
@@ -8,8 +8,8 @@ from pydantic import BaseModel, EmailStr
 
 from aiogram import Bot
 
-bot_token = environ['BOT_TOKEN']
-db_uri = environ['DB_URI']
+bot_token = os.getenv('BOT_TOKEN')
+db_uri = os.getenv('DB_URI')
 
 client = MongoClient(db_uri)
 db = client.Portfolio
