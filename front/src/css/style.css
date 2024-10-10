@@ -688,7 +688,7 @@ html {
 .contacts-block .chek-box-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   height: 97%;
 }
 .contacts-block .submit-button {
@@ -1984,4 +1984,4 @@ html {
 .phone-wrapper {
   border-radius: 90px;
   border: 1px solid #c8c8c8;
-}
+}/*# sourceMappingURL=style.css.map */
